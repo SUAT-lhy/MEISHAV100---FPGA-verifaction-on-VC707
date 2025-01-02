@@ -1,0 +1,21 @@
+[submodule "linux"]
+	path = linux
+	url = https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git
+[submodule "buildroot"]
+	path = buildroot
+	url = https://github.com/sifive/buildroot.git
+[submodule "riscv-pk"]
+	path = riscv-pk
+	url = https://github.com/riscv-software-src/riscv-pk.git
+[submodule "riscv-gnu-toolchain"]
+	path = riscv-gnu-toolchain
+	url = https://github.com/riscv-collab/riscv-gnu-toolchain.git
+[submodule "riscv-isa-sim"]
+	path = riscv-isa-sim
+	url = https://github.com/riscv-software-src/riscv-isa-sim.git
+[submodule "riscv-fesvr"]
+	path = riscv-fesvr
+	url = https://github.com/riscvarchive/riscv-fesvr.git
+[submodule "riscv-qemu"]
+	path = riscv-qemu
+	url = https://github.com/riscvarchive/riscv-qemu.git

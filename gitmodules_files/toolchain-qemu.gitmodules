@@ -1,0 +1,34 @@
+[submodule "roms/vgabios"]
+	path = roms/vgabios
+	url = https://gitlab.com/qemu-project/vgabios.git/
+[submodule "roms/seabios"]
+	path = roms/seabios
+	url = https://gitlab.com/qemu-project/seabios.git/
+[submodule "roms/SLOF"]
+	path = roms/SLOF
+	url = https://gitlab.com/qemu-project/SLOF.git
+[submodule "roms/ipxe"]
+	path = roms/ipxe
+	url = https://gitlab.com/qemu-project/ipxe.git
+[submodule "roms/openbios"]
+	path = roms/openbios
+	url = https://gitlab.com/qemu-project/openbios.git
+[submodule "roms/openhackware"]
+	path = roms/openhackware
+	url = https://gitlab.com/qemu-project/openhackware.git
+[submodule "roms/qemu-palcode"]
+	path = roms/qemu-palcode
+	url = https://gitlab.com/qemu-project/qemu-palcode.git
+[submodule "roms/sgabios"]
+	path = roms/sgabios
+	url = https://gitlab.com/qemu-project/sgabios.git
+[submodule "pixman"]
+	path = pixman
+	url = https://github.com/Distrotech/pixman.git
+[submodule "dtc"]
+	path = dtc
+	url = https://gitlab.com/qemu-project/dtc.git
+[submodule "roms/u-boot"]
+	path = roms/u-boot
+	url = https://gitlab.com/qemu-project/u-boot.git
+ 
