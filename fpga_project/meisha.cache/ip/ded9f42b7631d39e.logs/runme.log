@@ -1,0 +1,92 @@
+
+*** Running vivado
+    with args -log meisha_system_ila_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source meisha_system_ila_0.tcl
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source meisha_system_ila_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1359.125 ; gain = 338.414 ; free physical = 1782367 ; free virtual = 2002488
+INFO: [Synth 8-638] synthesizing module 'meisha_system_ila_0' [/home/test/vivado_prj/9.13/meisha_ok/meisha.srcs/sources_1/bd/meisha/ip/meisha_system_ila_0/synth/meisha_system_ila_0.v:203]
+INFO: [Synth 8-638] synthesizing module 'bd_e2c2' [/home/test/vivado_prj/9.13/meisha_ok/meisha.srcs/sources_1/bd/meisha/ip/meisha_system_ila_0/bd_0/hdl/bd_e2c2.v:13]
+INFO: [Synth 8-638] synthesizing module 'bd_e2c2_g_inst_0' [/home/test/vivado_prj/9.13/meisha_ok/meisha.srcs/sources_1/bd/meisha/ip/meisha_system_ila_0/bd_0/ip/ip_1/synth/bd_e2c2_g_inst_0.v:113]
+INFO: [Synth 8-638] synthesizing module 'bd_e2c2_g_inst_0_gigantic_mux' [/home/test/vivado_prj/9.13/meisha_ok/meisha.srcs/sources_1/bd/meisha/ip/meisha_system_ila_0/bd_0/ip/ip_1/bd_e2c2_g_inst_0_gigantic_mux.v:63]
+INFO: [Synth 8-256] done synthesizing module 'bd_e2c2_g_inst_0_gigantic_mux' (1#1) [/home/test/vivado_prj/9.13/meisha_ok/meisha.srcs/sources_1/bd/meisha/ip/meisha_system_ila_0/bd_0/ip/ip_1/bd_e2c2_g_inst_0_gigantic_mux.v:63]
+INFO: [Synth 8-256] done synthesizing module 'bd_e2c2_g_inst_0' (2#1) [/home/test/vivado_prj/9.13/meisha_ok/meisha.srcs/sources_1/bd/meisha/ip/meisha_system_ila_0/bd_0/ip/ip_1/synth/bd_e2c2_g_inst_0.v:113]
+INFO: [Synth 8-638] synthesizing module 'bd_e2c2_ila_lib_0' [/home/test/vivado_prj/9.13/meisha_ok/meisha.srcs/sources_1/bd/meisha/ip/meisha_system_ila_0/bd_0/ip/ip_0/synth/bd_e2c2_ila_lib_0.v:84]
+INFO: [Synth 8-638] synthesizing module 'CFGLUT5' [/eda/vivado2016/Vivado/2016.4/scripts/rt/data/unisim_comp.v:998]
+INFO: [Synth 8-256] done synthesizing module 'CFGLUT5' (10#1) [/eda/vivado2016/Vivado/2016.4/scripts/rt/data/unisim_comp.v:998]
+INFO: [Synth 8-638] synthesizing module 'CARRY4' [/eda/vivado2016/Vivado/2016.4/scripts/rt/data/unisim_comp.v:961]
+INFO: [Synth 8-256] done synthesizing module 'CARRY4' (11#1) [/eda/vivado2016/Vivado/2016.4/scripts/rt/data/unisim_comp.v:961]
+INFO: [Synth 8-638] synthesizing module 'SRLC32E' [/eda/vivado2016/Vivado/2016.4/scripts/rt/data/unisim_comp.v:43478]
+INFO: [Synth 8-256] done synthesizing module 'SRLC32E' (21#1) [/eda/vivado2016/Vivado/2016.4/scripts/rt/data/unisim_comp.v:43478]
+INFO: [Synth 8-638] synthesizing module 'SRL16E' [/eda/vivado2016/Vivado/2016.4/scripts/rt/data/unisim_comp.v:43328]
+INFO: [Synth 8-256] done synthesizing module 'SRL16E' (23#1) [/eda/vivado2016/Vivado/2016.4/scripts/rt/data/unisim_comp.v:43328]
+INFO: [Synth 8-638] synthesizing module 'SRLC16E' [/eda/vivado2016/Vivado/2016.4/scripts/rt/data/unisim_comp.v:43417]
+INFO: [Synth 8-256] done synthesizing module 'SRLC16E' (25#1) [/eda/vivado2016/Vivado/2016.4/scripts/rt/data/unisim_comp.v:43417]
+INFO: [Synth 8-638] synthesizing module 'FDRE' [/eda/vivado2016/Vivado/2016.4/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-256] done synthesizing module 'FDRE' (30#1) [/eda/vivado2016/Vivado/2016.4/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-256] done synthesizing module 'bd_e2c2_ila_lib_0' (50#1) [/home/test/vivado_prj/9.13/meisha_ok/meisha.srcs/sources_1/bd/meisha/ip/meisha_system_ila_0/bd_0/ip/ip_0/synth/bd_e2c2_ila_lib_0.v:84]
+INFO: [Synth 8-638] synthesizing module 'bd_e2c2_slot_0_ar_0' [/home/test/vivado_prj/9.13/meisha_ok/meisha.srcs/sources_1/bd/meisha/ip/meisha_system_ila_0/bd_0/ip/ip_5/synth/bd_e2c2_slot_0_ar_0.v:58]
+INFO: [Synth 8-638] synthesizing module 'xlconcat' [/home/test/vivado_prj/9.13/meisha_ok/meisha.srcs/sources_1/bd/meisha/ipshared/2e37/xlconcat.v:14]
+INFO: [Synth 8-256] done synthesizing module 'xlconcat' (51#1) [/home/test/vivado_prj/9.13/meisha_ok/meisha.srcs/sources_1/bd/meisha/ipshared/2e37/xlconcat.v:14]
+INFO: [Synth 8-256] done synthesizing module 'bd_e2c2_slot_0_ar_0' (52#1) [/home/test/vivado_prj/9.13/meisha_ok/meisha.srcs/sources_1/bd/meisha/ip/meisha_system_ila_0/bd_0/ip/ip_5/synth/bd_e2c2_slot_0_ar_0.v:58]
+INFO: [Synth 8-638] synthesizing module 'bd_e2c2_slot_0_aw_0' [/home/test/vivado_prj/9.13/meisha_ok/meisha.srcs/sources_1/bd/meisha/ip/meisha_system_ila_0/bd_0/ip/ip_2/synth/bd_e2c2_slot_0_aw_0.v:58]
+INFO: [Synth 8-256] done synthesizing module 'bd_e2c2_slot_0_aw_0' (53#1) [/home/test/vivado_prj/9.13/meisha_ok/meisha.srcs/sources_1/bd/meisha/ip/meisha_system_ila_0/bd_0/ip/ip_2/synth/bd_e2c2_slot_0_aw_0.v:58]
+INFO: [Synth 8-638] synthesizing module 'bd_e2c2_slot_0_b_0' [/home/test/vivado_prj/9.13/meisha_ok/meisha.srcs/sources_1/bd/meisha/ip/meisha_system_ila_0/bd_0/ip/ip_4/synth/bd_e2c2_slot_0_b_0.v:58]
+INFO: [Synth 8-256] done synthesizing module 'bd_e2c2_slot_0_b_0' (54#1) [/home/test/vivado_prj/9.13/meisha_ok/meisha.srcs/sources_1/bd/meisha/ip/meisha_system_ila_0/bd_0/ip/ip_4/synth/bd_e2c2_slot_0_b_0.v:58]
+INFO: [Synth 8-638] synthesizing module 'bd_e2c2_slot_0_r_0' [/home/test/vivado_prj/9.13/meisha_ok/meisha.srcs/sources_1/bd/meisha/ip/meisha_system_ila_0/bd_0/ip/ip_6/synth/bd_e2c2_slot_0_r_0.v:58]
+INFO: [Synth 8-638] synthesizing module 'xlconcat__parameterized0' [/home/test/vivado_prj/9.13/meisha_ok/meisha.srcs/sources_1/bd/meisha/ipshared/2e37/xlconcat.v:14]
+INFO: [Synth 8-256] done synthesizing module 'xlconcat__parameterized0' (54#1) [/home/test/vivado_prj/9.13/meisha_ok/meisha.srcs/sources_1/bd/meisha/ipshared/2e37/xlconcat.v:14]
+INFO: [Synth 8-256] done synthesizing module 'bd_e2c2_slot_0_r_0' (55#1) [/home/test/vivado_prj/9.13/meisha_ok/meisha.srcs/sources_1/bd/meisha/ip/meisha_system_ila_0/bd_0/ip/ip_6/synth/bd_e2c2_slot_0_r_0.v:58]
+INFO: [Synth 8-638] synthesizing module 'bd_e2c2_slot_0_w_0' [/home/test/vivado_prj/9.13/meisha_ok/meisha.srcs/sources_1/bd/meisha/ip/meisha_system_ila_0/bd_0/ip/ip_3/synth/bd_e2c2_slot_0_w_0.v:58]
+INFO: [Synth 8-638] synthesizing module 'xlconcat__parameterized1' [/home/test/vivado_prj/9.13/meisha_ok/meisha.srcs/sources_1/bd/meisha/ipshared/2e37/xlconcat.v:14]
+INFO: [Synth 8-256] done synthesizing module 'xlconcat__parameterized1' (55#1) [/home/test/vivado_prj/9.13/meisha_ok/meisha.srcs/sources_1/bd/meisha/ipshared/2e37/xlconcat.v:14]
+INFO: [Synth 8-256] done synthesizing module 'bd_e2c2_slot_0_w_0' (56#1) [/home/test/vivado_prj/9.13/meisha_ok/meisha.srcs/sources_1/bd/meisha/ip/meisha_system_ila_0/bd_0/ip/ip_3/synth/bd_e2c2_slot_0_w_0.v:58]
+INFO: [Synth 8-256] done synthesizing module 'bd_e2c2' (57#1) [/home/test/vivado_prj/9.13/meisha_ok/meisha.srcs/sources_1/bd/meisha/ip/meisha_system_ila_0/bd_0/hdl/bd_e2c2.v:13]
+INFO: [Synth 8-256] done synthesizing module 'meisha_system_ila_0' (58#1) [/home/test/vivado_prj/9.13/meisha_ok/meisha.srcs/sources_1/bd/meisha/ip/meisha_system_ila_0/synth/meisha_system_ila_0.v:203]
+Finished RTL Elaboration : Time (s): cpu = 00:01:27 ; elapsed = 00:01:28 . Memory (MB): peak = 1768.816 ; gain = 748.105 ; free physical = 1779046 ; free virtual = 1999205
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:28 ; elapsed = 00:01:29 . Memory (MB): peak = 1768.816 ; gain = 748.105 ; free physical = 1779035 ; free virtual = 1999162
+INFO: [Device 21-403] Loading part xc7vx485tffg1761-2
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.20 ; elapsed = 00:00:00.20 . Memory (MB): peak = 2009.844 ; gain = 1.004 ; free physical = 1777211 ; free virtual = 1997339
+Finished Constraint Validation : Time (s): cpu = 00:01:51 ; elapsed = 00:01:52 . Memory (MB): peak = 2009.844 ; gain = 989.133 ; free physical = 1777206 ; free virtual = 1997334
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:51 ; elapsed = 00:01:52 . Memory (MB): peak = 2009.844 ; gain = 989.133 ; free physical = 1777206 ; free virtual = 1997334
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:52 ; elapsed = 00:01:53 . Memory (MB): peak = 2009.844 ; gain = 989.133 ; free physical = 1777204 ; free virtual = 1997331
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:55 ; elapsed = 00:01:56 . Memory (MB): peak = 2009.844 ; gain = 989.133 ; free physical = 1777205 ; free virtual = 1997333
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:00 ; elapsed = 00:02:01 . Memory (MB): peak = 2009.844 ; gain = 989.133 ; free physical = 1777169 ; free virtual = 1997296
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:06 ; elapsed = 00:02:07 . Memory (MB): peak = 2009.844 ; gain = 989.133 ; free physical = 1777137 ; free virtual = 1997265
+Finished Timing Optimization : Time (s): cpu = 00:02:06 ; elapsed = 00:02:08 . Memory (MB): peak = 2009.844 ; gain = 989.133 ; free physical = 1777126 ; free virtual = 1997254
+Finished Technology Mapping : Time (s): cpu = 00:02:08 ; elapsed = 00:02:09 . Memory (MB): peak = 2009.844 ; gain = 989.133 ; free physical = 1777117 ; free virtual = 1997245
+Finished IO Insertion : Time (s): cpu = 00:02:08 ; elapsed = 00:02:10 . Memory (MB): peak = 2009.844 ; gain = 989.133 ; free physical = 1777119 ; free virtual = 1997247
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:08 ; elapsed = 00:02:10 . Memory (MB): peak = 2009.844 ; gain = 989.133 ; free physical = 1777119 ; free virtual = 1997247
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:09 ; elapsed = 00:02:10 . Memory (MB): peak = 2009.844 ; gain = 989.133 ; free physical = 1777119 ; free virtual = 1997247
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:09 ; elapsed = 00:02:10 . Memory (MB): peak = 2009.844 ; gain = 989.133 ; free physical = 1777119 ; free virtual = 1997247
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:09 ; elapsed = 00:02:10 . Memory (MB): peak = 2009.844 ; gain = 989.133 ; free physical = 1777119 ; free virtual = 1997246
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:09 ; elapsed = 00:02:10 . Memory (MB): peak = 2009.844 ; gain = 989.133 ; free physical = 1777119 ; free virtual = 1997246
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |    87|
+|2     |CFGLUT5  |   225|
+|3     |LUT1     |    74|
+|4     |LUT2     |    52|
+|5     |LUT3     |   231|
+|6     |LUT4     |   270|
+|7     |LUT5     |   152|
+|8     |LUT6     |  1276|
+|9     |MUXF7    |   329|
+|10    |MUXF8    |    36|
+|11    |RAMB36E1 |   224|
+|12    |SRL16E   |   254|
+|13    |SRLC16E  |     2|
+|14    |SRLC32E  |    17|
+|15    |FDRE     |  2899|
+|16    |FDSE     |     9|
++------+---------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:09 ; elapsed = 00:02:10 . Memory (MB): peak = 2009.844 ; gain = 989.133 ; free physical = 1777119 ; free virtual = 1997246
+synth_design: Time (s): cpu = 00:02:10 ; elapsed = 00:02:11 . Memory (MB): peak = 2009.844 ; gain = 815.648 ; free physical = 1777049 ; free virtual = 1997202

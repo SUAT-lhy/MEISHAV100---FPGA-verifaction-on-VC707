@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Mon Sep 23 10:06:20 2024
+# Process ID: 29108
+# Current directory: /home/test/vivado_prj/9.19/meisha_ok_2/meisha.runs/impl_1
+# Command line: vivado -log meisha_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source meisha_wrapper.tcl -notrace
+# Log file: /home/test/vivado_prj/9.19/meisha_ok_2/meisha.runs/impl_1/meisha_wrapper.vdi
+# Journal file: /home/test/vivado_prj/9.19/meisha_ok_2/meisha.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source meisha_wrapper.tcl -notrace

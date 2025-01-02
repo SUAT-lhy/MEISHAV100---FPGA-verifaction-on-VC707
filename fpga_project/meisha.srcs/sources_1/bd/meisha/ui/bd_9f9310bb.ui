@@ -1,0 +1,85 @@
+{
+   guistr: "# # String gsaved with Nlview 6.6.5b  2016-09-06 bk=1.3687 VDI=39 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port jtag_jtag_TCK -pg 1 -y 290 -defaultsOSRD
+preplace port jtag_jtag_TMS -pg 1 -y 310 -defaultsOSRD
+preplace port sdio_sdio_dat_0 -pg 1 -y 380 -defaultsOSRD
+preplace port jtag_jtag_TDO -pg 1 -y 280 -defaultsOSRD
+preplace port uart_txd -pg 1 -y 300 -defaultsOSRD
+preplace port sdio_sdio_dat_1 -pg 1 -y 380 -defaultsOSRD
+preplace port uart_rtsn -pg 1 -y 320 -defaultsOSRD
+preplace port uart_ctsn -pg 1 -y 400 -defaultsOSRD
+preplace port sdio_sdio_dat_2 -pg 1 -y 400 -defaultsOSRD
+preplace port sdio_sdio_dat_3 -pg 1 -y 420 -defaultsOSRD
+preplace port sdio_sdio_clk -pg 1 -y 340 -defaultsOSRD
+preplace port DDR3 -pg 1 -y 80 -defaultsOSRD
+preplace port uart_rxd -pg 1 -y 350 -defaultsOSRD
+preplace port jtag_jtag_TDI -pg 1 -y 330 -defaultsOSRD
+preplace port sdio_sdio_cmd -pg 1 -y 360 -defaultsOSRD
+preplace port key -pg 1 -y 540 -defaultsOSRD
+preplace port init_calib_complete -pg 1 -y 130 -defaultsOSRD
+preplace port reset -pg 1 -y 250 -defaultsOSRD
+preplace portBus sys_clk_n -pg 1 -y 500 -defaultsOSRD
+preplace portBus sys_clk_p -pg 1 -y 480 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 5 -y 700 -defaultsOSRD
+preplace inst mig_7series_0 -pg 1 -lvl 6 -y 100 -defaultsOSRD
+preplace inst DevKitWrapper_0 -pg 1 -lvl 6 -y 580 -defaultsOSRD
+preplace inst util_vector_logic_0 -pg 1 -lvl 2 -y 30 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 4 -y 160 -defaultsOSRD
+preplace inst proc_sys_reset_1 -pg 1 -lvl 3 -y 550 -defaultsOSRD
+preplace inst util_vector_logic_1 -pg 1 -lvl 3 -y 140 -defaultsOSRD
+preplace inst util_vector_logic_2 -pg 1 -lvl 2 -y 620 -defaultsOSRD
+preplace inst util_vector_logic_3 -pg 1 -lvl 4 -y 680 -defaultsOSRD
+preplace inst util_vector_logic_4 -pg 1 -lvl 4 -y 850 -defaultsOSRD
+preplace inst axi_interconnect_0 -pg 1 -lvl 5 -y 150 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 2 -y 520 -defaultsOSRD
+preplace inst chiplink_master_0 -pg 1 -lvl 4 -y 450 -defaultsOSRD
+preplace inst clk_wiz_1 -pg 1 -lvl 2 -y 170 -defaultsOSRD
+preplace inst util_ds_buf_0 -pg 1 -lvl 1 -y 510 -defaultsOSRD
+preplace netloc chiplink_master_0_chiplink_tx_data 1 4 2 NJ 490 1370
+preplace netloc mig_7series_0_mmcm_locked 1 3 4 660 270 NJ 270 1370J 250 2060J
+preplace netloc DevKitWrapper_0_auto_jtag_debug_source_out_jtag_TDO 1 6 1 2110
+preplace netloc clk_wiz_0_locked 1 2 1 240
+preplace netloc mig_7series_0_DDR3 1 6 1 2140
+preplace netloc DevKitWrapper_0_auto_topMod_uart_source_out_txd 1 6 1 2120
+preplace netloc mig_7series_0_init_calib_complete 1 3 4 620 -30 NJ -30 NJ -30 2130J
+preplace netloc util_vector_logic_4_Res 1 3 2 660 730 1040
+preplace netloc jtag_jtag_TCK_1 1 0 6 -400J 750 NJ 750 NJ 750 NJ 750 NJ 750 N
+preplace netloc util_vector_logic_3_Res 1 4 2 1060 570 1440J
+preplace netloc sdio_sdio_dat_0_1 1 0 6 -440J 340 NJ 340 NJ 340 NJ 340 NJ 340 1410J
+preplace netloc util_vector_logic_0_Res 1 2 4 NJ 30 NJ 30 NJ 30 1440J
+preplace netloc proc_sys_reset_1_peripheral_aresetn 1 3 2 610 590 1050J
+preplace netloc DevKitWrapper_0_ddr_io_c2b_clk 1 3 4 660 310 NJ 310 1380J 260 2070
+preplace netloc DevKitWrapper_0_ddr_io_c2b_rst 1 3 4 640 290 NJ 290 NJ 290 2060
+preplace netloc mig_7series_0_ui_clk 1 3 4 660 0 1030J 0 NJ 0 2060J
+preplace netloc util_ds_buf_0_IBUF_OUT 1 1 1 -70
+preplace netloc xlconstant_0_dout 1 5 1 1450
+preplace netloc IBUF_DS_N_1 1 0 1 -440J
+preplace netloc debug_mode_sel_pad_glitch_free_1 1 0 6 -410J 440 NJ 440 NJ 440 600J 560 1060J 530 NJ
+preplace netloc jtag_jtag_TMS_1 1 0 6 -430J 770 NJ 770 NJ 770 NJ 770 NJ 770 N
+preplace netloc clk_wiz_0_clk_out1 1 2 4 250 400 600J 260 1060J 370 1440
+preplace netloc DevKitWrapper_0_auto_topMod_spi_source_out_dq_0_o 1 6 1 2130
+preplace netloc DevKitWrapper_0_auto_topMod_spi_source_out_sck 1 6 1 2100
+preplace netloc clk_wiz_1_locked 1 1 2 -60 -20 230
+preplace netloc clk_wiz_1_clk_out1 1 2 4 240J -40 NJ -40 NJ -40 1450J
+preplace netloc IBUF_DS_P_1 1 0 1 -420J
+preplace netloc chiplink_master_0_io_axi4_0 1 4 1 1020
+preplace netloc axi_interconnect_0_M00_AXI 1 5 1 1370
+preplace netloc chiplink_master_0_chiplink_tx_rst 1 4 2 NJ 450 1400
+preplace netloc clk_wiz_0_clk_out2 1 2 4 230J 460 590J 550 NJ 550 1420
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 4 2 1040 20 1380J
+preplace netloc mig_7series_0_ui_clk_sync_rst 1 2 5 250 -10 NJ -10 NJ -10 NJ -10 2070J
+preplace netloc DevKitWrapper_0_ddr_io_c2b_send 1 3 4 650 300 NJ 300 1450J 270 2090
+preplace netloc chiplink_master_0_chiplink_tx_send 1 4 2 NJ 470 1380
+preplace netloc chiplink_master_0_chiplink_tx_clk 1 4 2 NJ 430 1430
+preplace netloc util_vector_logic_2_Res 1 2 1 250
+preplace netloc util_vector_logic_1_Res 1 3 1 NJ
+preplace netloc reset_1 1 0 2 NJ 250 -60
+preplace netloc DevKitWrapper_0_ddr_io_c2b_data 1 3 4 630 280 NJ 280 NJ 280 2080
+preplace netloc jtag_jtag_TDI_1 1 0 6 -450J 790 NJ 790 NJ 790 NJ 790 NJ 790 N
+preplace netloc DevKitWrapper_0_auto_topMod_spi_source_out_cs_0 1 6 1 2140
+preplace netloc uart_rxd_1 1 0 6 NJ 350 NJ 350 NJ 350 NJ 350 NJ 350 1390
+levelinfo -pg 1 -470 -210 110 420 840 1230 1770 3920 -top -280 -bot 1610
+",
+}
+0

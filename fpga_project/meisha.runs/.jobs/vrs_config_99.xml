@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="meisha_chiplink_master_0_0_synth_1" LaunchDir="/home/test/vivado_prj/10.11/meisha_ok_2/meisha.runs/meisha_chiplink_master_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="meisha_DevKitWrapper_0_0_synth_1" LaunchDir="/home/test/vivado_prj/10.11/meisha_ok_2/meisha.runs/meisha_DevKitWrapper_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="/home/test/vivado_prj/10.11/meisha_ok_2/meisha.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="meisha_chiplink_master_0_0_synth_1"/>
+		<Parent Id="meisha_DevKitWrapper_0_0_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="/home/test/vivado_prj/10.11/meisha_ok_2/meisha.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="meisha_chiplink_master_0_0_synth_1"/>
+		<Parent Id="meisha_DevKitWrapper_0_0_synth_1"/>
+	</Run>
+</Runs>
+

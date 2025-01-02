@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Tue Oct 15 17:03:28 2024
+# Process ID: 239518
+# Current directory: /home/test/vivado_prj/10.11/meisha_ok_2/meisha.runs/meisha_clk_wiz_0_0_synth_1
+# Command line: vivado -log meisha_clk_wiz_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source meisha_clk_wiz_0_0.tcl
+# Log file: /home/test/vivado_prj/10.11/meisha_ok_2/meisha.runs/meisha_clk_wiz_0_0_synth_1/meisha_clk_wiz_0_0.vds
+# Journal file: /home/test/vivado_prj/10.11/meisha_ok_2/meisha.runs/meisha_clk_wiz_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source meisha_clk_wiz_0_0.tcl -notrace

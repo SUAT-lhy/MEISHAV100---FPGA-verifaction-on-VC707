@@ -1,0 +1,331 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
+| Date         : Tue Dec 31 11:52:17 2024
+| Host         : Freddy running 64-bit major release  (build 9200)
+| Command      : report_methodology -file meisha_wrapper_methodology_drc_routed.rpt -rpx meisha_wrapper_methodology_drc_routed.rpx
+| Design       : meisha_wrapper
+| Device       : xc7vx485tffg1761-2
+| Speed File   : -2
+| Design State : Routed
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 58
++-----------+----------+----------------------------------------------------+------------+
+| Rule      | Severity | Description                                        | Violations |
++-----------+----------+----------------------------------------------------+------------+
+| PDRC-190  | Warning  | Suboptimally placed synchronized register chain    | 12         |
+| TIMING-2  | Warning  | Invalid primary clock source pin                   | 1          |
+| TIMING-4  | Warning  | Invalid primary clock redefinition on a clock tree | 1          |
+| TIMING-6  | Warning  | No common primary clock between related clocks     | 6          |
+| TIMING-7  | Warning  | No common node between related clocks              | 5          |
+| TIMING-18 | Warning  | Missing input or output delay                      | 31         |
+| TIMING-27 | Warning  | Invalid primary clock on hierarchical pin          | 2          |
++-----------+----------+----------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+PDRC-190#1 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[0] in site SLICE_X116Y216 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[0] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#2 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[10] in site SLICE_X114Y218 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[10] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#3 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[11] in site SLICE_X115Y216 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[11] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#4 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[1] in site SLICE_X116Y218 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[1] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#5 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[2] in site SLICE_X116Y220 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[2] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#6 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[3] in site SLICE_X117Y219 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[3] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#7 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[4] in site SLICE_X117Y216 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[4] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#8 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[5] in site SLICE_X118Y218 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[5] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#9 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[6] in site SLICE_X117Y214 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[6] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#10 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[7] in site SLICE_X115Y218 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[7] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#11 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[8] in site SLICE_X114Y220 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[8] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#12 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[9] in site SLICE_X115Y220 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[9] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+TIMING-2#1 Warning
+Invalid primary clock source pin  
+A primary clock clk_out2 is created on an inappropriate pin meisha_i/clk_wiz_0/clk_out2. It is recommended to create a primary clock only on a proper clock source (input port or primitive output pin with no timing arc)
+Related violations: <none>
+
+TIMING-4#1 Warning
+Invalid primary clock redefinition on a clock tree  
+Invalid clock redefinition on a clock tree. The primary clock clk_out2 is defined downstream of clock clk_out2_meisha_clk_wiz_0_0 and overrides its insertion delay and/or waveform definition
+Related violations: <none>
+
+TIMING-6#1 Warning
+No common primary clock between related clocks  
+The clocks clk_out1_meisha_clk_wiz_0_0 and clk_out2 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out1_meisha_clk_wiz_0_0] -to [get_clocks clk_out2]
+Related violations: <none>
+
+TIMING-6#2 Warning
+No common primary clock between related clocks  
+The clocks clk_out1_meisha_clk_wiz_0_0 and jtag_clk_pin are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out1_meisha_clk_wiz_0_0] -to [get_clocks jtag_clk_pin]
+Related violations: <none>
+
+TIMING-6#3 Warning
+No common primary clock between related clocks  
+The clocks clk_out2 and clk_out1_meisha_clk_wiz_0_0 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out2] -to [get_clocks clk_out1_meisha_clk_wiz_0_0]
+Related violations: <none>
+
+TIMING-6#4 Warning
+No common primary clock between related clocks  
+The clocks clk_pll_i and clk_out1_meisha_clk_wiz_0_0 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_pll_i] -to [get_clocks clk_out1_meisha_clk_wiz_0_0]
+Related violations: <none>
+
+TIMING-6#5 Warning
+No common primary clock between related clocks  
+The clocks jtag_clk_pin and clk_out1_meisha_clk_wiz_0_0 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks jtag_clk_pin] -to [get_clocks clk_out1_meisha_clk_wiz_0_0]
+Related violations: <none>
+
+TIMING-6#6 Warning
+No common primary clock between related clocks  
+The clocks jtag_clk_pin and clk_out2 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks jtag_clk_pin] -to [get_clocks clk_out2]
+Related violations: <none>
+
+TIMING-7#1 Warning
+No common node between related clocks  
+The clocks clk_out1_meisha_clk_wiz_0_0 and clk_out2 are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out1_meisha_clk_wiz_0_0] -to [get_clocks clk_out2]
+Related violations: <none>
+
+TIMING-7#2 Warning
+No common node between related clocks  
+The clocks clk_out1_meisha_clk_wiz_0_0 and jtag_clk_pin are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out1_meisha_clk_wiz_0_0] -to [get_clocks jtag_clk_pin]
+Related violations: <none>
+
+TIMING-7#3 Warning
+No common node between related clocks  
+The clocks clk_out2 and clk_out1_meisha_clk_wiz_0_0 are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out2] -to [get_clocks clk_out1_meisha_clk_wiz_0_0]
+Related violations: <none>
+
+TIMING-7#4 Warning
+No common node between related clocks  
+The clocks jtag_clk_pin and clk_out1_meisha_clk_wiz_0_0 are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks jtag_clk_pin] -to [get_clocks clk_out1_meisha_clk_wiz_0_0]
+Related violations: <none>
+
+TIMING-7#5 Warning
+No common node between related clocks  
+The clocks jtag_clk_pin and clk_out2 are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks jtag_clk_pin] -to [get_clocks clk_out2]
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on DDR3_dqs_n[0] relative to clock(s) VIRTUAL_mmcm_ps_clk_bufg_in 
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on DDR3_dqs_n[1] relative to clock(s) VIRTUAL_mmcm_ps_clk_bufg_in 
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An input delay is missing on DDR3_dqs_n[2] relative to clock(s) VIRTUAL_mmcm_ps_clk_bufg_in 
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An input delay is missing on DDR3_dqs_n[3] relative to clock(s) VIRTUAL_mmcm_ps_clk_bufg_in 
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An input delay is missing on DDR3_dqs_n[4] relative to clock(s) VIRTUAL_mmcm_ps_clk_bufg_in 
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An input delay is missing on DDR3_dqs_n[5] relative to clock(s) VIRTUAL_mmcm_ps_clk_bufg_in 
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An input delay is missing on DDR3_dqs_n[6] relative to clock(s) VIRTUAL_mmcm_ps_clk_bufg_in 
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An input delay is missing on DDR3_dqs_n[7] relative to clock(s) VIRTUAL_mmcm_ps_clk_bufg_in 
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An input delay is missing on DDR3_dqs_p[0] relative to clock(s) VIRTUAL_mmcm_ps_clk_bufg_in 
+Related violations: <none>
+
+TIMING-18#10 Warning
+Missing input or output delay  
+An input delay is missing on DDR3_dqs_p[1] relative to clock(s) VIRTUAL_mmcm_ps_clk_bufg_in 
+Related violations: <none>
+
+TIMING-18#11 Warning
+Missing input or output delay  
+An input delay is missing on DDR3_dqs_p[2] relative to clock(s) VIRTUAL_mmcm_ps_clk_bufg_in 
+Related violations: <none>
+
+TIMING-18#12 Warning
+Missing input or output delay  
+An input delay is missing on DDR3_dqs_p[3] relative to clock(s) VIRTUAL_mmcm_ps_clk_bufg_in 
+Related violations: <none>
+
+TIMING-18#13 Warning
+Missing input or output delay  
+An input delay is missing on DDR3_dqs_p[4] relative to clock(s) VIRTUAL_mmcm_ps_clk_bufg_in 
+Related violations: <none>
+
+TIMING-18#14 Warning
+Missing input or output delay  
+An input delay is missing on DDR3_dqs_p[5] relative to clock(s) VIRTUAL_mmcm_ps_clk_bufg_in 
+Related violations: <none>
+
+TIMING-18#15 Warning
+Missing input or output delay  
+An input delay is missing on DDR3_dqs_p[6] relative to clock(s) VIRTUAL_mmcm_ps_clk_bufg_in 
+Related violations: <none>
+
+TIMING-18#16 Warning
+Missing input or output delay  
+An input delay is missing on DDR3_dqs_p[7] relative to clock(s) VIRTUAL_mmcm_ps_clk_bufg_in 
+Related violations: <none>
+
+TIMING-18#17 Warning
+Missing input or output delay  
+An input delay is missing on jtag_jtag_TDI relative to clock(s) jtag_clk_pin 
+Related violations: <none>
+
+TIMING-18#18 Warning
+Missing input or output delay  
+An input delay is missing on jtag_jtag_TMS relative to clock(s) jtag_clk_pin 
+Related violations: <none>
+
+TIMING-18#19 Warning
+Missing input or output delay  
+An input delay is missing on key relative to clock(s) VIRTUAL_clk_out1_meisha_clk_wiz_0_0 
+Related violations: <none>
+
+TIMING-18#20 Warning
+Missing input or output delay  
+An input delay is missing on reset relative to clock(s) VIRTUAL_clk_out1_meisha_clk_wiz_0_0 
+Related violations: <none>
+
+TIMING-18#21 Warning
+Missing input or output delay  
+An input delay is missing on sdio_sdio_dat_0 relative to clock(s) VIRTUAL_clk_out1_meisha_clk_wiz_0_0 
+Related violations: <none>
+
+TIMING-18#22 Warning
+Missing input or output delay  
+An input delay is missing on sys_clk_n[0] relative to clock(s) VIRTUAL_mem_refclk 
+Related violations: <none>
+
+TIMING-18#23 Warning
+Missing input or output delay  
+An input delay is missing on sys_clk_p[0] relative to clock(s) VIRTUAL_mem_refclk 
+Related violations: <none>
+
+TIMING-18#24 Warning
+Missing input or output delay  
+An input delay is missing on uart_rxd relative to clock(s) VIRTUAL_clk_out1_meisha_clk_wiz_0_0 
+Related violations: <none>
+
+TIMING-18#25 Warning
+Missing input or output delay  
+An output delay is missing on DDR3_reset_n relative to clock(s) meisha_i/clk_wiz_1/inst/clk_in1 
+Related violations: <none>
+
+TIMING-18#26 Warning
+Missing input or output delay  
+An output delay is missing on init_calib_complete relative to clock(s) meisha_i/clk_wiz_1/inst/clk_in1 
+Related violations: <none>
+
+TIMING-18#27 Warning
+Missing input or output delay  
+An output delay is missing on jtag_jtag_TDO relative to clock(s) jtag_clk_pin 
+Related violations: <none>
+
+TIMING-18#28 Warning
+Missing input or output delay  
+An output delay is missing on sdio_sdio_clk relative to clock(s) VIRTUAL_clk_out1_meisha_clk_wiz_0_0 
+Related violations: <none>
+
+TIMING-18#29 Warning
+Missing input or output delay  
+An output delay is missing on sdio_sdio_cmd relative to clock(s) VIRTUAL_clk_out1_meisha_clk_wiz_0_0 
+Related violations: <none>
+
+TIMING-18#30 Warning
+Missing input or output delay  
+An output delay is missing on sdio_sdio_dat_3 relative to clock(s) VIRTUAL_clk_out1_meisha_clk_wiz_0_0 
+Related violations: <none>
+
+TIMING-18#31 Warning
+Missing input or output delay  
+An output delay is missing on uart_txd relative to clock(s) VIRTUAL_clk_out1_meisha_clk_wiz_0_0 
+Related violations: <none>
+
+TIMING-27#1 Warning
+Invalid primary clock on hierarchical pin  
+A primary clock clk_in1 is created on an inappropriate internal pin meisha_i/clk_wiz_0/clk_in1. It is not recommended to create a primary clock on a hierarchical pin when its driver pin has a fanout connected to multiple clock pins
+Related violations: <none>
+
+TIMING-27#2 Warning
+Invalid primary clock on hierarchical pin  
+A primary clock meisha_i/clk_wiz_1/inst/clk_in1 is created on an inappropriate internal pin meisha_i/clk_wiz_1/inst/clk_in1. It is not recommended to create a primary clock on a hierarchical pin when its driver pin has a fanout connected to multiple clock pins
+Related violations: <none>
+
+

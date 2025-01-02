@@ -1,0 +1,62 @@
+
+*** Running vivado
+    with args -log meisha_proc_sys_reset_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source meisha_proc_sys_reset_0_0.tcl
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source meisha_proc_sys_reset_0_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1257.137 ; gain = 236.426 ; free physical = 2014211 ; free virtual = 2027417
+INFO: [Synth 8-638] synthesizing module 'meisha_proc_sys_reset_0_0' [/home/test/vivado_prj/meisha/meisha.srcs/sources_1/bd/meisha/ip/meisha_proc_sys_reset_0_0/synth/meisha_proc_sys_reset_0_0.vhd:71]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [/home/test/vivado_prj/meisha/meisha.srcs/sources_1/bd/meisha/ipshared/04b4/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-638] synthesizing module 'lpf' [/home/test/vivado_prj/meisha/meisha.srcs/sources_1/bd/meisha/ipshared/04b4/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-638] synthesizing module 'SRL16' [/eda/vivado2016/Vivado/2016.4/scripts/rt/data/unisim_comp.v:43312]
+INFO: [Synth 8-256] done synthesizing module 'SRL16' (1#1) [/eda/vivado2016/Vivado/2016.4/scripts/rt/data/unisim_comp.v:43312]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [/home/test/vivado_prj/meisha/meisha.srcs/sources_1/bd/meisha/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (2#1) [/home/test/vivado_prj/meisha/meisha.srcs/sources_1/bd/meisha/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (3#1) [/home/test/vivado_prj/meisha/meisha.srcs/sources_1/bd/meisha/ipshared/04b4/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-638] synthesizing module 'sequence_psr' [/home/test/vivado_prj/meisha/meisha.srcs/sources_1/bd/meisha/ipshared/04b4/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [/home/test/vivado_prj/meisha/meisha.srcs/sources_1/bd/meisha/ipshared/04b4/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (4#1) [/home/test/vivado_prj/meisha/meisha.srcs/sources_1/bd/meisha/ipshared/04b4/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (5#1) [/home/test/vivado_prj/meisha/meisha.srcs/sources_1/bd/meisha/ipshared/04b4/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (6#1) [/home/test/vivado_prj/meisha/meisha.srcs/sources_1/bd/meisha/ipshared/04b4/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-256] done synthesizing module 'meisha_proc_sys_reset_0_0' (7#1) [/home/test/vivado_prj/meisha/meisha.srcs/sources_1/bd/meisha/ip/meisha_proc_sys_reset_0_0/synth/meisha_proc_sys_reset_0_0.vhd:71]
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 1298.613 ; gain = 277.902 ; free physical = 2014123 ; free virtual = 2027330
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 1298.613 ; gain = 277.902 ; free physical = 2014114 ; free virtual = 2027321
+INFO: [Device 21-403] Loading part xc7vx485tffg1761-2
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1752.570 ; gain = 0.004 ; free physical = 2013599 ; free virtual = 2026814
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 1752.570 ; gain = 731.859 ; free physical = 2013598 ; free virtual = 2026813
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 1752.570 ; gain = 731.859 ; free physical = 2013598 ; free virtual = 2026813
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 1752.570 ; gain = 731.859 ; free physical = 2013598 ; free virtual = 2026813
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 1752.570 ; gain = 731.859 ; free physical = 2013595 ; free virtual = 2026809
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 1752.570 ; gain = 731.859 ; free physical = 2013580 ; free virtual = 2026795
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 1752.570 ; gain = 731.859 ; free physical = 2013556 ; free virtual = 2026771
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 1752.570 ; gain = 731.859 ; free physical = 2013556 ; free virtual = 2026771
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 1752.570 ; gain = 731.859 ; free physical = 2013542 ; free virtual = 2026757
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 1752.570 ; gain = 731.859 ; free physical = 2013542 ; free virtual = 2026757
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 1752.570 ; gain = 731.859 ; free physical = 2013542 ; free virtual = 2026757
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 1752.570 ; gain = 731.859 ; free physical = 2013542 ; free virtual = 2026757
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 1752.570 ; gain = 731.859 ; free physical = 2013542 ; free virtual = 2026757
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 1752.570 ; gain = 731.859 ; free physical = 2013541 ; free virtual = 2026756
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 1752.570 ; gain = 731.859 ; free physical = 2013541 ; free virtual = 2026756
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |LUT1  |     5|
+|2     |LUT2  |     9|
+|3     |LUT3  |     1|
+|4     |LUT4  |     6|
+|5     |LUT5  |     3|
+|6     |LUT6  |     1|
+|7     |SRL16 |     1|
+|8     |FDR   |     8|
+|9     |FDRE  |    28|
+|10    |FDSE  |     4|
++------+------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 1752.570 ; gain = 731.859 ; free physical = 2013541 ; free virtual = 2026756
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 1752.570 ; gain = 643.359 ; free physical = 2013497 ; free virtual = 2026711

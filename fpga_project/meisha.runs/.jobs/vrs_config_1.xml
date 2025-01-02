@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="meisha_VC707BaseShell_0_0_synth_1" LaunchDir="/home/test/vivado_prj/meisha/meisha.runs/meisha_VC707BaseShell_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="meisha_chiplink_master_0_0_synth_1" LaunchDir="/home/test/vivado_prj/meisha/meisha.runs/meisha_chiplink_master_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="meisha_clk_wiz_0_0_synth_1" LaunchDir="/home/test/vivado_prj/meisha/meisha.runs/meisha_clk_wiz_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="meisha_util_ds_buf_0_0_synth_1" LaunchDir="/home/test/vivado_prj/meisha/meisha.runs/meisha_util_ds_buf_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="meisha_mig_7series_0_0_synth_1" LaunchDir="/home/test/vivado_prj/meisha/meisha.runs/meisha_mig_7series_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="meisha_proc_sys_reset_0_0_synth_1" LaunchDir="/home/test/vivado_prj/meisha/meisha.runs/meisha_proc_sys_reset_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="meisha_util_vector_logic_0_1_synth_1" LaunchDir="/home/test/vivado_prj/meisha/meisha.runs/meisha_util_vector_logic_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="meisha_proc_sys_reset_0_1_synth_1" LaunchDir="/home/test/vivado_prj/meisha/meisha.runs/meisha_proc_sys_reset_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="meisha_util_vector_logic_1_0_synth_1" LaunchDir="/home/test/vivado_prj/meisha/meisha.runs/meisha_util_vector_logic_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="meisha_auto_cc_0_synth_1" LaunchDir="/home/test/vivado_prj/meisha/meisha.runs/meisha_auto_cc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+
