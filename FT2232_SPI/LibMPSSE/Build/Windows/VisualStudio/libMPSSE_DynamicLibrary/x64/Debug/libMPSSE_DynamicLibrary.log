@@ -1,0 +1,11 @@
+﻿  ftdi_spi.c
+c:\project\fp_sw_000096\branches\0.6plus21228\libmpsse\ftdi_spi.c(526): warning C4244: '=': conversion from 'unsigned long' to 'uint8', possible loss of data
+  ftdi_mid.c
+c:\project\fp_sw_000096\branches\0.6plus21228\libmpsse\ftdi_mid.c(653): warning C4267: 'initializing': conversion from 'size_t' to 'byte', possible loss of data
+  ftdi_infra.c
+  ftdi_i2c.c
+  ftdi_common.c
+  Generating Code...
+     Creating library C:\Project\FP_SW_000096\branches\0.6Plus21228\LibMPSSE\Build\Windows\VisualStudio\\binaries\x64\Debug\libMPSSE.lib and object C:\Project\FP_SW_000096\branches\0.6Plus21228\LibMPSSE\Build\Windows\VisualStudio\\binaries\x64\Debug\libMPSSE.exp
+  libMPSSE_DynamicLibrary.vcxproj -> C:\Project\FP_SW_000096\branches\0.6Plus21228\LibMPSSE\Build\Windows\VisualStudio\\binaries\x64\Debug\libMPSSE.dll
+  libMPSSE_DynamicLibrary.vcxproj -> C:\Project\FP_SW_000096\branches\0.6Plus21228\LibMPSSE\Build\Windows\VisualStudio\\binaries\x64\Debug\libMPSSE.pdb (Full PDB)

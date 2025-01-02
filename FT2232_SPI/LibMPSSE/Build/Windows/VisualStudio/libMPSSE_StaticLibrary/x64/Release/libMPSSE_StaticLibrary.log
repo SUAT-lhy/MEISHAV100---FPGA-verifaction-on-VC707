@@ -1,0 +1,8 @@
+﻿  ftdi_common.c
+  ftdi_i2c.c
+  ftdi_infra.c
+  ftdi_mid.c
+..\..\..\..\ftdi_mid.c(653): warning C4267: 'initializing': conversion from 'size_t' to 'byte', possible loss of data
+  ftdi_spi.c
+..\..\..\..\ftdi_spi.c(526): warning C4244: '=': conversion from 'unsigned long' to 'uint8', possible loss of data
+  libMPSSE_StaticLibrary.vcxproj -> C:\Project\FP_SW_000096\branches\0.6Plus21228\LibMPSSE\Build\Windows\VisualStudio\\binaries\x64\Release\libMPSSE.lib

@@ -1,0 +1,33 @@
+﻿  ftdi_common.c
+C:\Users\ALL RIGHT\Desktop\新建文件夹\libMPSSE__0-6_Source\LibMPSSE\ftdi_common.c(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Users\ALL RIGHT\Desktop\新建文件夹\libMPSSE__0-6_Source\LibMPSSE\ftdi_infra.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Users\ALL RIGHT\Desktop\新建文件夹\libMPSSE__0-6_Source\External\Windows\CDMv2.12.28\ftd2xx.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Users\ALL RIGHT\Desktop\新建文件夹\libMPSSE__0-6_Source\LibMPSSE\ftdi_common.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  ftdi_i2c.c
+C:\Users\ALL RIGHT\Desktop\新建文件夹\libMPSSE__0-6_Source\LibMPSSE\ftdi_i2c.c(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Users\ALL RIGHT\Desktop\新建文件夹\libMPSSE__0-6_Source\LibMPSSE\ftdi_infra.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Users\ALL RIGHT\Desktop\新建文件夹\libMPSSE__0-6_Source\External\Windows\CDMv2.12.28\ftd2xx.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Users\ALL RIGHT\Desktop\新建文件夹\libMPSSE__0-6_Source\LibMPSSE\ftdi_common.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Users\ALL RIGHT\Desktop\新建文件夹\libMPSSE__0-6_Source\LibMPSSE\ftdi_i2c.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Users\ALL RIGHT\Desktop\新建文件夹\libMPSSE__0-6_Source\LibMPSSE\ftdi_mid.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  ftdi_infra.c
+C:\Users\ALL RIGHT\Desktop\新建文件夹\libMPSSE__0-6_Source\LibMPSSE\ftdi_infra.c(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Users\ALL RIGHT\Desktop\新建文件夹\libMPSSE__0-6_Source\LibMPSSE\ftdi_infra.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Users\ALL RIGHT\Desktop\新建文件夹\libMPSSE__0-6_Source\External\Windows\CDMv2.12.28\ftd2xx.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  ftdi_mid.c
+C:\Users\ALL RIGHT\Desktop\新建文件夹\libMPSSE__0-6_Source\LibMPSSE\ftdi_mid.c(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Users\ALL RIGHT\Desktop\新建文件夹\libMPSSE__0-6_Source\LibMPSSE\ftdi_infra.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Users\ALL RIGHT\Desktop\新建文件夹\libMPSSE__0-6_Source\External\Windows\CDMv2.12.28\ftd2xx.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Users\ALL RIGHT\Desktop\新建文件夹\libMPSSE__0-6_Source\LibMPSSE\ftdi_common.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Users\ALL RIGHT\Desktop\新建文件夹\libMPSSE__0-6_Source\LibMPSSE\ftdi_mid.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Users\ALL RIGHT\Desktop\新建文件夹\libMPSSE__0-6_Source\LibMPSSE\ftdi_mid.c(653,19): warning C4267: “初始化”: 从“size_t”转换到“byte”，可能丢失数据
+  ftdi_spi.c
+C:\Users\ALL RIGHT\Desktop\新建文件夹\libMPSSE__0-6_Source\LibMPSSE\ftdi_spi.c(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Users\ALL RIGHT\Desktop\新建文件夹\libMPSSE__0-6_Source\LibMPSSE\ftdi_infra.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Users\ALL RIGHT\Desktop\新建文件夹\libMPSSE__0-6_Source\External\Windows\CDMv2.12.28\ftd2xx.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Users\ALL RIGHT\Desktop\新建文件夹\libMPSSE__0-6_Source\LibMPSSE\ftdi_common.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Users\ALL RIGHT\Desktop\新建文件夹\libMPSSE__0-6_Source\LibMPSSE\ftdi_spi.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Users\ALL RIGHT\Desktop\新建文件夹\libMPSSE__0-6_Source\LibMPSSE\ftdi_mid.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Users\ALL RIGHT\Desktop\新建文件夹\libMPSSE__0-6_Source\LibMPSSE\ftdi_spi.c(526,37): warning C4244: “=”: 从“unsigned long”转换到“uint8”，可能丢失数据
+libMPSSE_DynamicLibrary.rc(10): fatal error RC1015: cannot open include file 'afxres.h'.
+  

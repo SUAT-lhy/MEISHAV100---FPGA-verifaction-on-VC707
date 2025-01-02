@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "c0cd41c6-d36d-4c1e-a869-973a2a67f4a6": {
+      "ProjectGuid": "c0cd41c6-d36d-4c1e-a869-973a2a67f4a6",
+      "DisplayName": "libMPSSE_DynamicLibrary",
+      "ColorIndex": 0
+    },
+    "280c2d70-d4b3-4c7d-b1fb-1b1b5da28d8f": {
+      "ProjectGuid": "280c2d70-d4b3-4c7d-b1fb-1b1b5da28d8f",
+      "DisplayName": "libMPSSE_StaticLibrary",
+      "ColorIndex": 1
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "杂项文件",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 2
+}

@@ -1,0 +1,13 @@
+﻿  已复制         1 个文件。
+  sample-static.c
+D:\Downloads\FT2232_SPI\Release\samples\SPI\SPI\sample-static.c(234,32): warning C4311: “类型强制转换”: 从“FT_HANDLE”到“unsigned int”的指针截断
+D:\Downloads\FT2232_SPI\Release\samples\SPI\SPI\sample-static.c(239,41): warning C4311: “类型强制转换”: 从“FT_HANDLE”到“unsigned int”的指针截断
+D:\Downloads\FT2232_SPI\Release\samples\SPI\SPI\sample-static.c(313,23): warning C4018: “<”: 有符号/无符号不匹配
+D:\Downloads\FT2232_SPI\Release\samples\SPI\SPI\sample-static.c(316,23): warning C4018: “<”: 有符号/无符号不匹配
+D:\Downloads\FT2232_SPI\Release\samples\SPI\SPI\sample-static.c(248,9): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Downloads\FT2232_SPI\Release\samples\SPI\SPI\sample-static.c(275,23): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+libMPSSE.lib(ftdi_spi.obj) : warning LNK4099: 未找到 PDB“”(使用“libMPSSE.lib(ftdi_spi.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+libMPSSE.lib(ftdi_infra.obj) : warning LNK4099: 未找到 PDB“”(使用“libMPSSE.lib(ftdi_infra.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+libMPSSE.lib(ftdi_mid.obj) : warning LNK4099: 未找到 PDB“”(使用“libMPSSE.lib(ftdi_mid.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+    正在创建库 D:\Downloads\FT2232_SPI\Release\samples\SPI\SPI\sample-static\\binaries\x64\Debug\sample-static.lib 和对象 D:\Downloads\FT2232_SPI\Release\samples\SPI\SPI\sample-static\\binaries\x64\Debug\sample-static.exp
+  sample-static.vcxproj -> D:\Downloads\FT2232_SPI\Release\samples\SPI\SPI\sample-static\binaries\x64\Debug\sample-static.exe

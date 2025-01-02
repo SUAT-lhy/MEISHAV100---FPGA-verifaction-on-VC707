@@ -1,0 +1,24 @@
+EXPORTS
+    Cleanup_libMPSSE @1
+    FT_ReadGPIO @2
+    FT_WriteGPIO @3
+    I2C_CloseChannel @4
+    I2C_DeviceRead @5
+    I2C_DeviceWrite @6
+    I2C_GetChannelInfo @7
+    I2C_GetNumChannels @8
+    I2C_InitChannel @9
+    I2C_OpenChannel @10
+    Infra_TestFunction@8 @11
+    Init_libMPSSE @12
+    SPI_ChangeCS @13
+    SPI_CloseChannel @14
+    SPI_GetChannelInfo @15
+    SPI_GetNumChannels @16
+    SPI_InitChannel @17
+    SPI_IsBusy @18
+    SPI_OpenChannel @19
+    SPI_Read @20
+    SPI_ReadWrite @21
+    SPI_ToggleCS @22
+    SPI_Write @23

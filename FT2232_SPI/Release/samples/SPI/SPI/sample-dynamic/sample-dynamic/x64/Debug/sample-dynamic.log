@@ -1,0 +1,7 @@
+﻿  sample-dynamic.c
+C:\Users\ALL RIGHT\Desktop\新建文件夹\libMPSSE__0-6_Source\Release\samples\SPI\SPI\sample-dynamic.c(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Users\ALL RIGHT\Desktop\新建文件夹\libMPSSE__0-6_Source\Release\samples\SPI\SPI\ftd2xx.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Users\ALL RIGHT\Desktop\新建文件夹\libMPSSE__0-6_Source\Release\samples\SPI\SPI\sample-dynamic.c(384,61): warning C4311: “类型强制转换”: 从“FT_HANDLE”到“unsigned int”的指针截断
+C:\Users\ALL RIGHT\Desktop\新建文件夹\libMPSSE__0-6_Source\Release\samples\SPI\SPI\sample-dynamic.c(390,62): warning C4311: “类型强制转换”: 从“FT_HANDLE”到“unsigned int”的指针截断
+  sample-dynamic.vcxproj -> C:\Users\ALL RIGHT\Desktop\新建文件夹\libMPSSE__0-6_Source\Release\samples\SPI\SPI\sample-dynamic\binaries\x64\Debug\sample-dynamic.exe
+  已复制         1 个文件。
