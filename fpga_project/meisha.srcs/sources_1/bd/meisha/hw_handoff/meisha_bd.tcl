@@ -437,13 +437,6 @@ CONFIG.NUM_MI {1} \
      return 1
    }
   
-  set_property -dict [ list \
-CONFIG.SUPPORTS_NARROW_BURST {1} \
-CONFIG.NUM_READ_OUTSTANDING {2} \
-CONFIG.NUM_WRITE_OUTSTANDING {2} \
-CONFIG.MAX_BURST_LENGTH {256} \
- ] [get_bd_intf_pins /chiplink_master_0/io_axi4_0]
-
   # Create instance: clk_wiz_0, and set properties
   set clk_wiz_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:5.3 clk_wiz_0 ]
   set_property -dict [ list \

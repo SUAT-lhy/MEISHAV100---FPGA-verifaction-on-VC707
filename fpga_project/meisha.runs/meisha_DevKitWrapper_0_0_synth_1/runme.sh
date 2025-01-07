@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/test/vivado_prj/meisha_zhenli/meisha.runs/meisha_DevKitWrapper_0_0_synth_1'
+HD_PWD='/home/test/vivado_prj/MEISHAV100---FPGA-verifaction-on-VC707/fpga_project/meisha.runs/meisha_DevKitWrapper_0_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

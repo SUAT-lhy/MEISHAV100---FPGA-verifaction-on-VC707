@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/20676/Desktop/meisha_zhenli/meisha_zhenli/meisha.srcs/constrs_1/imports/meisha_ok/meisha.xdc rfile:../../../meisha.srcs/constrs_1/imports/meisha_ok/meisha.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/test/vivado_prj/MEISHAV100---FPGA-verifaction-on-VC707/fpga_project/meisha.srcs/constrs_1/imports/meisha_ok/meisha.xdc rfile:../../../meisha.srcs/constrs_1/imports/meisha_ok/meisha.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:1 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN {E19} [get_ports {sys_clk_p}]
 set_property src_info {type:XDC file:1 line:4 export:INPUT save:INPUT read:READ} [current_design]

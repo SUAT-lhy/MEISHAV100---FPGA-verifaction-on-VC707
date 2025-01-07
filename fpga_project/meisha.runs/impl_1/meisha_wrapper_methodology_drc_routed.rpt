@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-| Date         : Tue Dec 31 11:52:17 2024
-| Host         : Freddy running 64-bit major release  (build 9200)
+| Tool Version : Vivado v.2016.4 (lin64) Build 1756540 Mon Jan 23 19:11:19 MST 2017
+| Date         : Tue Jan  7 10:40:01 2025
+| Host         : meisha running 64-bit CentOS Linux release 7.9.2009 (Core)
 | Command      : report_methodology -file meisha_wrapper_methodology_drc_routed.rpt -rpx meisha_wrapper_methodology_drc_routed.rpx
 | Design       : meisha_wrapper
 | Device       : xc7vx485tffg1761-2
@@ -23,7 +23,7 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 58
+             Violations found: 59
 +-----------+----------+----------------------------------------------------+------------+
 | Rule      | Severity | Description                                        | Violations |
 +-----------+----------+----------------------------------------------------+------------+
@@ -32,6 +32,7 @@ Table of Contents
 | TIMING-4  | Warning  | Invalid primary clock redefinition on a clock tree | 1          |
 | TIMING-6  | Warning  | No common primary clock between related clocks     | 6          |
 | TIMING-7  | Warning  | No common node between related clocks              | 5          |
+| TIMING-15 | Warning  | Large hold violation on inter-clock path           | 1          |
 | TIMING-18 | Warning  | Missing input or output delay                      | 31         |
 | TIMING-27 | Warning  | Invalid primary clock on hierarchical pin          | 2          |
 +-----------+----------+----------------------------------------------------+------------+
@@ -40,62 +41,62 @@ Table of Contents
 -----------------
 PDRC-190#1 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[0] in site SLICE_X116Y216 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[0] is not placed in the same (SLICE) site.
+The FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[0] in site SLICE_X129Y265 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[0] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#2 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[10] in site SLICE_X114Y218 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[10] is not placed in the same (SLICE) site.
+The FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[10] in site SLICE_X128Y264 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[10] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#3 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[11] in site SLICE_X115Y216 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[11] is not placed in the same (SLICE) site.
+The FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[11] in site SLICE_X125Y263 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[11] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#4 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[1] in site SLICE_X116Y218 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[1] is not placed in the same (SLICE) site.
+The FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[1] in site SLICE_X126Y263 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[1] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#5 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[2] in site SLICE_X116Y220 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[2] is not placed in the same (SLICE) site.
+The FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[2] in site SLICE_X129Y263 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[2] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#6 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[3] in site SLICE_X117Y219 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[3] is not placed in the same (SLICE) site.
+The FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[3] in site SLICE_X127Y261 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[3] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#7 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[4] in site SLICE_X117Y216 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[4] is not placed in the same (SLICE) site.
+The FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[4] in site SLICE_X126Y261 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[4] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#8 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[5] in site SLICE_X118Y218 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[5] is not placed in the same (SLICE) site.
+The FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[5] in site SLICE_X128Y261 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[5] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#9 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[6] in site SLICE_X117Y214 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[6] is not placed in the same (SLICE) site.
+The FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[6] in site SLICE_X130Y263 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[6] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#10 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[7] in site SLICE_X115Y218 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[7] is not placed in the same (SLICE) site.
+The FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[7] in site SLICE_X127Y263 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[7] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#11 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[8] in site SLICE_X114Y220 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[8] is not placed in the same (SLICE) site.
+The FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[8] in site SLICE_X126Y265 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[8] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#12 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[9] in site SLICE_X115Y220 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[9] is not placed in the same (SLICE) site.
+The FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[9] in site SLICE_X124Y263 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[9] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 TIMING-2#1 Warning
@@ -161,6 +162,11 @@ Related violations: <none>
 TIMING-7#5 Warning
 No common node between related clocks  
 The clocks jtag_clk_pin and clk_out2 are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks jtag_clk_pin] -to [get_clocks clk_out2]
+Related violations: <none>
+
+TIMING-15#1 Warning
+Large hold violation on inter-clock path  
+There is a large inter-clock skew of 2.430 ns between meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_calib_top/init_calib_complete_reg/C (clocked by clk_pll_i) and meisha_i/DevKitWrapper_0/inst/wrangler/pwr_hard_reset_sync_main_clk_ResetCatchAndSync_d3/reset_2_reg_srl2/D (clocked by clk_out1_meisha_clk_wiz_0_0) that results in large hold timing violation(s) of -1.099 ns. Fixing large hold violations during routing might impact setup slack and result in more difficult timing closure
 Related violations: <none>
 
 TIMING-18#1 Warning

@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-| Date         : Tue Dec 31 11:53:40 2024
-| Host         : Freddy running 64-bit major release  (build 9200)
+| Tool Version : Vivado v.2016.4 (lin64) Build 1756540 Mon Jan 23 19:11:19 MST 2017
+| Date         : Tue Jan  7 10:41:27 2025
+| Host         : meisha running 64-bit CentOS Linux release 7.9.2009 (Core)
 | Command      : report_clock_utilization -file meisha_wrapper_clock_utilization_routed.rpt
 | Design       : meisha_wrapper
 | Device       : 7vx485t-ffg1761
@@ -29,19 +29,21 @@ Table of Contents
 14. Cell Type Counts per Global Clock: Region X1Y3
 15. Cell Type Counts per Global Clock: Region X0Y4
 16. Cell Type Counts per Global Clock: Region X1Y4
-17. Cell Type Counts per Global Clock: Region X1Y5
-18. Cell Type Counts per Global Clock: Region X1Y6
-19. Load Cell Placement Summary for Global Clock g0
-20. Load Cell Placement Summary for Global Clock g1
-21. Load Cell Placement Summary for Global Clock g2
-22. Load Cell Placement Summary for Global Clock g3
-23. Load Cell Placement Summary for Global Clock g4
-24. Load Cell Placement Summary for Global Clock g5
-25. Load Cell Placement Summary for Global Clock g6
-26. Load Cell Placement Summary for Global Clock g7
-27. Load Cell Placement Summary for Global Clock g8
-28. Load Cell Placement Summary for Global Clock g9
-29. Load Cell Placement Summary for Global Clock g10
+17. Cell Type Counts per Global Clock: Region X0Y5
+18. Cell Type Counts per Global Clock: Region X1Y5
+19. Cell Type Counts per Global Clock: Region X0Y6
+20. Cell Type Counts per Global Clock: Region X1Y6
+21. Load Cell Placement Summary for Global Clock g0
+22. Load Cell Placement Summary for Global Clock g1
+23. Load Cell Placement Summary for Global Clock g2
+24. Load Cell Placement Summary for Global Clock g3
+25. Load Cell Placement Summary for Global Clock g4
+26. Load Cell Placement Summary for Global Clock g5
+27. Load Cell Placement Summary for Global Clock g6
+28. Load Cell Placement Summary for Global Clock g7
+29. Load Cell Placement Summary for Global Clock g8
+30. Load Cell Placement Summary for Global Clock g9
+31. Load Cell Placement Summary for Global Clock g10
 
 1. Clock Primitive Utilization
 ------------------------------
@@ -65,12 +67,12 @@ Table of Contents
 +-----------+-----------+-----------------+------------+----------------+--------------+------+-------------------+-------------------+-------------+-----------------+--------------+-----------------------------+------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+
 | Global Id | Source Id | Driver Type/Pin | Constraint | Site           | Clock Region | Root | Clock Delay Group | Load Clock Region | Clock Loads | Non-Clock Loads | Clock Period | Clock                       | Driver Pin                                                                                                             | Net                                                                                                                      |
 +-----------+-----------+-----------------+------------+----------------+--------------+------+-------------------+-------------------+-------------+-----------------+--------------+-----------------------------+------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+
-| g0        | src0      | BUFG/O          | None       | BUFGCTRL_X0Y3  | n/a          |      |                   |                10 |       52000 |               0 |       20.000 | clk_out2_meisha_clk_wiz_0_0 | meisha_i/clk_wiz_0/inst/clkout2_buf/O                                                                                  | meisha_i/clk_wiz_0/inst/clk_out2                                                                                         |
-| g1        | src0      | BUFG/O          | None       | BUFGCTRL_X0Y0  | n/a          |      |                   |                 9 |       19872 |               0 |       20.000 | clk_out1_meisha_clk_wiz_0_0 | meisha_i/clk_wiz_0/inst/clkout1_buf/O                                                                                  | meisha_i/clk_wiz_0/inst/clk_out1                                                                                         |
-| g2        | src1      | BUFG/O          | None       | BUFGCTRL_X0Y16 | n/a          |      |                   |                 3 |       14038 |               0 |        5.000 | clk_pll_i                   | meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_ddr3_infrastructure/u_bufg_clkdiv0/O                             | meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_ddr3_infrastructure/CLK                                            |
-| g3        | src2      | BUFG/O          | None       | BUFGCTRL_X0Y4  | n/a          |      |                   |                 1 |         309 |               0 |      300.000 | jtag_clk_pin                | jtag_jtag_TCK_IBUF_BUFG_inst/O                                                                                         | jtag_jtag_TCK_IBUF_BUFG                                                                                                  |
+| g0        | src0      | BUFG/O          | None       | BUFGCTRL_X0Y3  | n/a          |      |                   |                14 |       52000 |               0 |       20.000 | clk_out2_meisha_clk_wiz_0_0 | meisha_i/clk_wiz_0/inst/clkout2_buf/O                                                                                  | meisha_i/clk_wiz_0/inst/clk_out2                                                                                         |
+| g1        | src0      | BUFG/O          | None       | BUFGCTRL_X0Y0  | n/a          |      |                   |                 8 |       19872 |               0 |       20.000 | clk_out1_meisha_clk_wiz_0_0 | meisha_i/clk_wiz_0/inst/clkout1_buf/O                                                                                  | meisha_i/clk_wiz_0/inst/clk_out1                                                                                         |
+| g2        | src1      | BUFG/O          | None       | BUFGCTRL_X0Y16 | n/a          |      |                   |                 4 |       14038 |               0 |        5.000 | clk_pll_i                   | meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_ddr3_infrastructure/u_bufg_clkdiv0/O                             | meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_ddr3_infrastructure/CLK                                            |
+| g3        | src2      | BUFG/O          | None       | BUFGCTRL_X0Y4  | n/a          |      |                   |                 2 |         309 |               0 |      300.000 | jtag_clk_pin                | jtag_jtag_TCK_IBUF_BUFG_inst/O                                                                                         | jtag_jtag_TCK_IBUF_BUFG                                                                                                  |
 | g4        | src3      | BUFG/O          | None       | BUFGCTRL_X0Y1  | n/a          |      |                   |                 5 |          48 |               0 |        5.000 | clk_out1_meisha_clk_wiz_1_0 | meisha_i/clk_wiz_1/inst/clkout1_buf/O                                                                                  | meisha_i/clk_wiz_1/inst/clk_out1                                                                                         |
-| g5        | src1      | BUFG/O          | None       | BUFGCTRL_X0Y17 | n/a          |      |                   |                 3 |          22 |               0 |       10.000 | mmcm_ps_clk_bufg_in         | meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_ddr3_infrastructure/gen_mmcm.u_bufg_mmcm_ps_clk/O                | meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_ddr3_infrastructure/mmcm_ps_clk                                    |
+| g5        | src1      | BUFG/O          | None       | BUFGCTRL_X0Y17 | n/a          |      |                   |                 2 |          22 |               0 |       10.000 | mmcm_ps_clk_bufg_in         | meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_ddr3_infrastructure/gen_mmcm.u_bufg_mmcm_ps_clk/O                | meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_ddr3_infrastructure/mmcm_ps_clk                                    |
 | g6        | src4      | BUFG/O          | None       | BUFGCTRL_X0Y2  | n/a          |      |                   |                 2 |          17 |               0 |        2.500 | clk_ref_mmcm_400            | meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_iodelay_ctrl/clk_ref_300_400_en.clk_ref_400.u_bufg_clk_ref_400/O | meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_iodelay_ctrl/clk_ref_300_400_en.clk_ref_400.u_bufg_clk_ref_400_n_0 |
 | g7        | src5      | BUFG/O          | None       | BUFGCTRL_X0Y18 | n/a          |      |                   |                 1 |           1 |               0 |        5.000 | clk_in1                     | meisha_i/clk_wiz_0/inst/clkin1_bufg/O                                                                                  | meisha_i/clk_wiz_0/inst/clk_in1_meisha_clk_wiz_0_0                                                                       |
 | g8        | src0      | BUFG/O          | None       | BUFGCTRL_X0Y5  | n/a          |      |                   |                 1 |           1 |               0 |       20.000 | clkfbout_meisha_clk_wiz_0_0 | meisha_i/clk_wiz_0/inst/clkf_buf/O                                                                                     | meisha_i/clk_wiz_0/inst/clkfbout_buf_meisha_clk_wiz_0_0                                                                  |
@@ -133,20 +135,20 @@ Table of Contents
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+-------+-------+------+-------+------+-------+------+-------+------+-------+
 | Clock Region Name | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used  | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+-------+-------+------+-------+------+-------+------+-------+------+-------+
-| X0Y0              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     4 |    0 |     0 |    2 |    50 |    0 |    50 |  6066 |  5500 | 2594 |  2200 |    0 |   140 |    0 |    70 |   10 |   180 |
-| X1Y0              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    1 |     1 |    0 |     4 |    0 |     0 |    0 |    50 |    0 |    50 |  6242 |  5600 | 2739 |  2500 |    0 |   160 |    1 |    80 |   18 |   220 |
-| X0Y1              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     4 |    0 |     0 |    0 |    50 |    0 |    50 |  7591 |  4900 | 3502 |  2200 |    2 |   140 |    3 |    70 |    0 |   180 |
-| X1Y1              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     4 |    0 |     0 |    0 |    50 |    0 |    50 | 11539 |  5600 | 4470 |  2500 |    5 |   160 |   15 |    80 |    0 |   220 |
-| X0Y2              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     4 |    0 |     1 |    0 |    50 |    0 |    50 |  8486 |  4750 | 3740 |  2150 |    3 |   130 |    8 |    65 |    4 |   180 |
-| X1Y2              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     4 |    0 |     1 |    0 |    50 |    0 |    50 | 12533 |  5450 | 4759 |  2450 |    5 |   150 |    8 |    75 |    0 |   220 |
-| X0Y3              |    4 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    1 |     1 |    0 |     4 |    0 |     0 |    0 |    50 |    0 |    50 |  5774 |  5500 | 2453 |  2200 |    0 |   140 |    0 |    70 |    6 |   180 |
-| X1Y3              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     4 |    0 |     0 |    0 |    50 |    0 |    50 |  6097 |  5600 | 2531 |  2500 |    0 |   160 |    0 |    80 |    9 |   220 |
-| X0Y4              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     4 |    0 |     0 |    0 |    50 |    0 |    50 |   926 |  5500 |  338 |  2200 |    0 |   140 |    0 |    70 |    4 |   180 |
-| X1Y4              |    5 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     4 |    0 |     0 |    4 |    50 |    8 |    50 |  7106 |  5600 | 3225 |  2500 |    1 |   160 |    0 |    80 |    5 |   220 |
-| X0Y5              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     4 |    0 |     1 |    0 |    50 |    0 |    50 |     0 |  5350 |    0 |  2150 |    0 |   130 |    0 |    65 |    0 |   180 |
-| X1Y5              |    5 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    1 |     1 |    0 |     4 |    0 |     1 |    0 |    50 |    0 |    50 |  9699 |  5450 | 4365 |  2450 |    0 |   150 |    0 |    75 |    0 |   220 |
-| X0Y6              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     4 |    0 |     0 |    0 |    50 |    0 |    50 |     0 |  5500 |    0 |  2200 |    0 |   140 |    0 |    70 |    0 |   180 |
-| X1Y6              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     4 |    0 |     0 |    4 |    50 |    8 |    50 |  1114 |  5600 |  451 |  2500 |    0 |   160 |    0 |    80 |    0 |   220 |
+| X0Y0              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     4 |    0 |     0 |    2 |    50 |    0 |    50 |  1464 |  5500 |  595 |  2200 |    2 |   140 |    0 |    70 |    2 |   180 |
+| X1Y0              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    1 |     1 |    0 |     4 |    0 |     0 |    0 |    50 |    0 |    50 |  1235 |  5600 |  507 |  2500 |    0 |   160 |    0 |    80 |    0 |   220 |
+| X0Y1              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     4 |    0 |     0 |    0 |    50 |    0 |    50 |  5199 |  4900 | 2569 |  2200 |    2 |   140 |    2 |    70 |   12 |   180 |
+| X1Y1              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     4 |    0 |     0 |    0 |    50 |    0 |    50 |  4825 |  5600 | 2501 |  2500 |    0 |   160 |    0 |    80 |    1 |   220 |
+| X0Y2              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     4 |    0 |     1 |    0 |    50 |    0 |    50 |  6683 |  4750 | 2814 |  2150 |    0 |   130 |   11 |    65 |    4 |   180 |
+| X1Y2              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     4 |    0 |     1 |    0 |    50 |    0 |    50 |  5309 |  5450 | 2566 |  2450 |    2 |   150 |    1 |    75 |    9 |   220 |
+| X0Y3              |    5 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    1 |     1 |    0 |     4 |    0 |     0 |    0 |    50 |    0 |    50 | 10326 |  5500 | 3696 |  2200 |    5 |   140 |   14 |    70 |    0 |   180 |
+| X1Y3              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     4 |    0 |     0 |    0 |    50 |    0 |    50 | 11598 |  5600 | 4768 |  2500 |    3 |   160 |    3 |    80 |    0 |   220 |
+| X0Y4              |    4 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     4 |    0 |     0 |    0 |    50 |    0 |    50 |  8483 |  5500 | 3421 |  2200 |    0 |   140 |    1 |    70 |    9 |   180 |
+| X1Y4              |    6 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     4 |    0 |     0 |    4 |    50 |    8 |    50 |  8576 |  5600 | 3728 |  2500 |    2 |   160 |    3 |    80 |    4 |   220 |
+| X0Y5              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     4 |    0 |     1 |    0 |    50 |    0 |    50 |  4161 |  5350 | 1807 |  2150 |    0 |   130 |    0 |    65 |   15 |   180 |
+| X1Y5              |    5 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    1 |     1 |    0 |     4 |    0 |     1 |    0 |    50 |    0 |    50 | 11101 |  5450 | 4782 |  2450 |    0 |   150 |    0 |    75 |    0 |   220 |
+| X0Y6              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     4 |    0 |     0 |    0 |    50 |    0 |    50 |   480 |  5500 |  167 |  2200 |    0 |   140 |    0 |    70 |    0 |   180 |
+| X1Y6              |    4 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     4 |    0 |     0 |    4 |    50 |    8 |    50 |  3733 |  5600 | 1678 |  2500 |    0 |   160 |    0 |    80 |    0 |   220 |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+-------+-------+------+-------+------+-------+------+-------+------+-------+
 * Global Clock column represents track count; while other columns represents cell counts
 
@@ -157,12 +159,12 @@ Table of Contents
 +----+----+----+
 |    | X0 | X1 |
 +----+----+----+
-| Y6 |  0 |  3 |
-| Y5 |  0 |  5 |
-| Y4 |  1 |  5 |
-| Y3 |  4 |  3 |
+| Y6 |  1 |  4 |
+| Y5 |  1 |  5 |
+| Y4 |  4 |  6 |
+| Y3 |  5 |  2 |
 | Y2 |  3 |  3 |
-| Y1 |  3 |  2 |
+| Y1 |  1 |  1 |
 | Y0 |  2 |  3 |
 +----+----+----+
 
@@ -173,7 +175,7 @@ Table of Contents
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+----------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                              |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+----------------------------------+
-| g0        | n/a   | BUFG/O          | None       |        6073 |               0 | 6063 |      0 |    0 |  10 |  0 |    0 |   0 |       0 | meisha_i/clk_wiz_0/inst/clk_out2 |
+| g0        | n/a   | BUFG/O          | None       |        1467 |               0 | 1461 |      0 |    2 |   2 |  0 |    0 |   0 |       0 | meisha_i/clk_wiz_0/inst/clk_out2 |
 | g1        | n/a   | BUFG/O          | None       |           3 |               0 |    3 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | meisha_i/clk_wiz_0/inst/clk_out1 |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+----------------------------------+
 * Clock Loads column represents the clock pin loads (pin count)
@@ -187,7 +189,7 @@ Table of Contents
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+---------------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                     |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+---------------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |        6261 |               0 | 6242 |      0 |    1 |  18 |  0 |    0 |   0 |       0 | meisha_i/clk_wiz_0/inst/clk_out2                        |
+| g0        | n/a   | BUFG/O          | None       |        1235 |               0 | 1235 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | meisha_i/clk_wiz_0/inst/clk_out2                        |
 | g4        | n/a   | BUFG/O          | None       |           1 |               0 |    0 |      0 |    0 |   0 |  0 |    1 |   0 |       0 | meisha_i/clk_wiz_1/inst/clk_out1                        |
 | g9        | n/a   | BUFG/O          | None       |           1 |               0 |    0 |      0 |    0 |   0 |  0 |    0 |   1 |       0 | meisha_i/clk_wiz_1/inst/clkfbout_buf_meisha_clk_wiz_1_0 |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+---------------------------------------------------------+
@@ -202,9 +204,7 @@ Table of Contents
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+----------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                              |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+----------------------------------+
-| g0        | n/a   | BUFG/O          | None       |        4975 |               0 | 4965 |      5 |    3 |   0 |  0 |    0 |   0 |       0 | meisha_i/clk_wiz_0/inst/clk_out2 |
-| g1        | n/a   | BUFG/O          | None       |        2327 |               0 | 2320 |      5 |    2 |   0 |  0 |    0 |   0 |       0 | meisha_i/clk_wiz_0/inst/clk_out1 |
-| g3        | n/a   | BUFG/O          | None       |         309 |               0 |  306 |      3 |    0 |   0 |  0 |    0 |   0 |       0 | jtag_jtag_TCK_IBUF_BUFG          |
+| g0        | n/a   | BUFG/O          | None       |        5218 |               0 | 5199 |      1 |    4 |  12 |  0 |    0 |   0 |       0 | meisha_i/clk_wiz_0/inst/clk_out2 |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+----------------------------------+
 * Clock Loads column represents the clock pin loads (pin count)
 ** Non-Clock Loads column represents the non-clock pin loads (pin count)
@@ -217,8 +217,7 @@ Table of Contents
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+----------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                              |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+----------------------------------+
-| g0        | n/a   | BUFG/O          | None       |        8141 |               0 | 8110 |      5 |   19 |   0 |  0 |    0 |   0 |       0 | meisha_i/clk_wiz_0/inst/clk_out2 |
-| g1        | n/a   | BUFG/O          | None       |        3447 |               0 | 3429 |     15 |    1 |   0 |  0 |    0 |   0 |       0 | meisha_i/clk_wiz_0/inst/clk_out1 |
+| g0        | n/a   | BUFG/O          | None       |        4826 |               0 | 4825 |      0 |    0 |   1 |  0 |    0 |   0 |       0 | meisha_i/clk_wiz_0/inst/clk_out2 |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+----------------------------------+
 * Clock Loads column represents the clock pin loads (pin count)
 ** Non-Clock Loads column represents the non-clock pin loads (pin count)
@@ -231,9 +230,9 @@ Table of Contents
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+----------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                              |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+----------------------------------+
-| g0        | n/a   | BUFG/O          | None       |        6152 |               0 | 6130 |      2 |   11 |   4 |  0 |    0 |   0 |       0 | meisha_i/clk_wiz_0/inst/clk_out2 |
-| g1        | n/a   | BUFG/O          | None       |        2370 |               0 | 2356 |     14 |    0 |   0 |  0 |    0 |   0 |       0 | meisha_i/clk_wiz_0/inst/clk_out1 |
-| g4        | n/a   | BUFG/O          | None       |           1 |               0 |    0 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | meisha_i/clk_wiz_1/inst/clk_out1 |
+| g0        | n/a   | BUFG/O          | None       |        6270 |               0 | 6252 |      2 |   11 |   4 |  0 |    0 |   0 |       0 | meisha_i/clk_wiz_0/inst/clk_out2 |
+| g1        | n/a   | BUFG/O          | None       |         392 |               0 |  392 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | meisha_i/clk_wiz_0/inst/clk_out1 |
+| g4        | n/a   | BUFG/O          | None       |          40 |               0 |   39 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | meisha_i/clk_wiz_1/inst/clk_out1 |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+----------------------------------+
 * Clock Loads column represents the clock pin loads (pin count)
 ** Non-Clock Loads column represents the non-clock pin loads (pin count)
@@ -246,9 +245,9 @@ Table of Contents
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+----------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                              |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+----------------------------------+
-| g0        | n/a   | BUFG/O          | None       |        5831 |               0 | 5813 |      2 |   12 |   0 |  0 |    0 |   0 |       0 | meisha_i/clk_wiz_0/inst/clk_out2 |
-| g1        | n/a   | BUFG/O          | None       |        6704 |               0 | 6700 |      1 |    1 |   0 |  0 |    0 |   0 |       0 | meisha_i/clk_wiz_0/inst/clk_out1 |
-| g4        | n/a   | BUFG/O          | None       |          20 |               0 |   20 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | meisha_i/clk_wiz_1/inst/clk_out1 |
+| g0        | n/a   | BUFG/O          | None       |        2909 |               0 | 2897 |      0 |    1 |   9 |  0 |    0 |   0 |       0 | meisha_i/clk_wiz_0/inst/clk_out2 |
+| g1        | n/a   | BUFG/O          | None       |        2414 |               0 | 2408 |      2 |    2 |   0 |  0 |    0 |   0 |       0 | meisha_i/clk_wiz_0/inst/clk_out1 |
+| g4        | n/a   | BUFG/O          | None       |           4 |               0 |    4 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | meisha_i/clk_wiz_1/inst/clk_out1 |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+----------------------------------+
 * Clock Loads column represents the clock pin loads (pin count)
 ** Non-Clock Loads column represents the non-clock pin loads (pin count)
@@ -261,8 +260,9 @@ Table of Contents
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+---------------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                     |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+---------------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |        5778 |               0 | 5772 |      0 |    0 |   6 |  0 |    0 |   0 |       0 | meisha_i/clk_wiz_0/inst/clk_out2                        |
-| g1        | n/a   | BUFG/O          | None       |           2 |               0 |    2 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | meisha_i/clk_wiz_0/inst/clk_out1                        |
+| g0        | n/a   | BUFG/O          | None       |        6526 |               0 | 6497 |      5 |   17 |   0 |  0 |    0 |   0 |       0 | meisha_i/clk_wiz_0/inst/clk_out2                        |
+| g1        | n/a   | BUFG/O          | None       |        3800 |               0 | 3789 |      9 |    2 |   0 |  0 |    0 |   0 |       0 | meisha_i/clk_wiz_0/inst/clk_out1                        |
+| g3        | n/a   | BUFG/O          | None       |          43 |               0 |   40 |      3 |    0 |   0 |  0 |    0 |   0 |       0 | jtag_jtag_TCK_IBUF_BUFG                                 |
 | g7        | n/a   | BUFG/O          | None       |           1 |               0 |    0 |      0 |    0 |   0 |  0 |    0 |   1 |       0 | meisha_i/clk_wiz_0/inst/clk_in1_meisha_clk_wiz_0_0      |
 | g8        | n/a   | BUFG/O          | None       |           1 |               0 |    0 |      0 |    0 |   0 |  0 |    0 |   1 |       0 | meisha_i/clk_wiz_0/inst/clkfbout_buf_meisha_clk_wiz_0_0 |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+---------------------------------------------------------+
@@ -277,9 +277,8 @@ Table of Contents
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+----------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                              |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+----------------------------------+
-| g0        | n/a   | BUFG/O          | None       |        6036 |               0 | 6027 |      0 |    0 |   9 |  0 |    0 |   0 |       0 | meisha_i/clk_wiz_0/inst/clk_out2 |
-| g1        | n/a   | BUFG/O          | None       |          46 |               0 |   45 |      1 |    0 |   0 |  0 |    0 |   0 |       0 | meisha_i/clk_wiz_0/inst/clk_out1 |
-| g4        | n/a   | BUFG/O          | None       |          25 |               0 |   25 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | meisha_i/clk_wiz_1/inst/clk_out1 |
+| g0        | n/a   | BUFG/O          | None       |        4126 |               0 | 4112 |      3 |    6 |   0 |  0 |    0 |   0 |       0 | meisha_i/clk_wiz_0/inst/clk_out2 |
+| g1        | n/a   | BUFG/O          | None       |        7512 |               0 | 7486 |     24 |    0 |   0 |  0 |    0 |   0 |       0 | meisha_i/clk_wiz_0/inst/clk_out1 |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+----------------------------------+
 * Clock Loads column represents the clock pin loads (pin count)
 ** Non-Clock Loads column represents the non-clock pin loads (pin count)
@@ -289,11 +288,14 @@ Table of Contents
 15. Cell Type Counts per Global Clock: Region X0Y4
 --------------------------------------------------
 
-+-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+----------------------------------+
-| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF  | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                              |
-+-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+----------------------------------+
-| g0        | n/a   | BUFG/O          | None       |         930 |               0 | 926 |      0 |    0 |   4 |  0 |    0 |   0 |       0 | meisha_i/clk_wiz_0/inst/clk_out2 |
-+-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+----------------------------------+
++-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------+
+| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                           |
++-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------+
+| g0        | n/a   | BUFG/O          | None       |        7537 |               0 | 7525 |      2 |    1 |   9 |  0 |    0 |   0 |       0 | meisha_i/clk_wiz_0/inst/clk_out2                                              |
+| g1        | n/a   | BUFG/O          | None       |         693 |               0 |  691 |      2 |    0 |   0 |  0 |    0 |   0 |       0 | meisha_i/clk_wiz_0/inst/clk_out1                                              |
+| g2        | n/a   | BUFG/O          | None       |           1 |               0 |    1 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_ddr3_infrastructure/CLK |
+| g3        | n/a   | BUFG/O          | None       |         266 |               0 |  266 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | jtag_jtag_TCK_IBUF_BUFG                                                       |
++-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------+
 * Clock Loads column represents the clock pin loads (pin count)
 ** Non-Clock Loads column represents the non-clock pin loads (pin count)
 *** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
@@ -305,9 +307,10 @@ Table of Contents
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+--------------------------------------------------------------------------------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                                                                      |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+--------------------------------------------------------------------------------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |        1163 |               0 | 1158 |      0 |    0 |   5 |  0 |    0 |   0 |       0 | meisha_i/clk_wiz_0/inst/clk_out2                                                                                         |
-| g1        | n/a   | BUFG/O          | None       |        3814 |               0 | 3806 |      3 |    1 |   0 |  0 |    0 |   0 |       0 | meisha_i/clk_wiz_0/inst/clk_out1                                                                                         |
-| g2        | n/a   | BUFG/O          | None       |        2206 |               0 | 2127 |     30 |    0 |   0 |  0 |    0 |   0 |       0 | meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_ddr3_infrastructure/CLK                                            |
+| g0        | n/a   | BUFG/O          | None       |        6066 |               0 | 6058 |      1 |    3 |   4 |  0 |    0 |   0 |       0 | meisha_i/clk_wiz_0/inst/clk_out2                                                                                         |
+| g1        | n/a   | BUFG/O          | None       |        2024 |               0 | 2019 |      0 |    2 |   0 |  0 |    0 |   0 |       0 | meisha_i/clk_wiz_0/inst/clk_out1                                                                                         |
+| g2        | n/a   | BUFG/O          | None       |         533 |               0 |  482 |      2 |    0 |   0 |  0 |    0 |   0 |       0 | meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_ddr3_infrastructure/CLK                                            |
+| g4        | n/a   | BUFG/O          | None       |           2 |               0 |    2 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | meisha_i/clk_wiz_1/inst/clk_out1                                                                                         |
 | g5        | n/a   | BUFG/O          | None       |           4 |               0 |    0 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_ddr3_infrastructure/mmcm_ps_clk                                    |
 | g6        | n/a   | BUFG/O          | None       |          16 |               0 |   15 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_iodelay_ctrl/clk_ref_300_400_en.clk_ref_400.u_bufg_clk_ref_400_n_0 |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+--------------------------------------------------------------------------------------------------------------------------+
@@ -316,31 +319,58 @@ Table of Contents
 *** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
 
 
-17. Cell Type Counts per Global Clock: Region X1Y5
+17. Cell Type Counts per Global Clock: Region X0Y5
 --------------------------------------------------
 
-+-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+---------------------------------------------------------------------------------------+
-| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                                   |
-+-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+---------------------------------------------------------------------------------------+
-| g1        | n/a   | BUFG/O          | None       |          58 |               0 |   58 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | meisha_i/clk_wiz_0/inst/clk_out1                                                      |
-| g2        | n/a   | BUFG/O          | None       |       10230 |               0 | 9627 |    595 |    0 |   0 |  0 |    1 |   0 |       0 | meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_ddr3_infrastructure/CLK         |
-| g4        | n/a   | BUFG/O          | None       |           1 |               0 |    0 |      0 |    0 |   0 |  0 |    0 |   1 |       0 | meisha_i/clk_wiz_1/inst/clk_out1                                                      |
-| g5        | n/a   | BUFG/O          | None       |          14 |               0 |   14 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_ddr3_infrastructure/mmcm_ps_clk |
-| g10       | n/a   | BUFH/O          | None       |           1 |               0 |    0 |      0 |    0 |   0 |  0 |    1 |   0 |       0 | meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_ddr3_infrastructure/pll_clk3    |
-+-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+---------------------------------------------------------------------------------------+
++-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+----------------------------------+
+| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                              |
++-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+----------------------------------+
+| g0        | n/a   | BUFG/O          | None       |        4176 |               0 | 4161 |      0 |    0 |  15 |  0 |    0 |   0 |       0 | meisha_i/clk_wiz_0/inst/clk_out2 |
++-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+----------------------------------+
 * Clock Loads column represents the clock pin loads (pin count)
 ** Non-Clock Loads column represents the non-clock pin loads (pin count)
 *** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
 
 
-18. Cell Type Counts per Global Clock: Region X1Y6
+18. Cell Type Counts per Global Clock: Region X1Y5
+--------------------------------------------------
+
++-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+------------------------------------------------------------------------------------+
+| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                                |
++-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+------------------------------------------------------------------------------------+
+| g0        | n/a   | BUFG/O          | None       |         475 |               0 |  475 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | meisha_i/clk_wiz_0/inst/clk_out2                                                   |
+| g1        | n/a   | BUFG/O          | None       |        1933 |               0 | 1931 |      2 |    0 |   0 |  0 |    0 |   0 |       0 | meisha_i/clk_wiz_0/inst/clk_out1                                                   |
+| g2        | n/a   | BUFG/O          | None       |        9315 |               0 | 8695 |    612 |    0 |   0 |  0 |    1 |   0 |       0 | meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_ddr3_infrastructure/CLK      |
+| g4        | n/a   | BUFG/O          | None       |           1 |               0 |    0 |      0 |    0 |   0 |  0 |    0 |   1 |       0 | meisha_i/clk_wiz_1/inst/clk_out1                                                   |
+| g10       | n/a   | BUFH/O          | None       |           1 |               0 |    0 |      0 |    0 |   0 |  0 |    1 |   0 |       0 | meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_ddr3_infrastructure/pll_clk3 |
++-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+------------------------------------------------------------------------------------+
+* Clock Loads column represents the clock pin loads (pin count)
+** Non-Clock Loads column represents the non-clock pin loads (pin count)
+*** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
+
+
+19. Cell Type Counts per Global Clock: Region X0Y6
+--------------------------------------------------
+
++-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+----------------------------------+
+| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF  | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                              |
++-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+----------------------------------+
+| g0        | n/a   | BUFG/O          | None       |         480 |               0 | 480 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | meisha_i/clk_wiz_0/inst/clk_out2 |
++-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+----------------------------------+
+* Clock Loads column represents the clock pin loads (pin count)
+** Non-Clock Loads column represents the non-clock pin loads (pin count)
+*** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
+
+
+20. Cell Type Counts per Global Clock: Region X1Y6
 --------------------------------------------------
 
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+--------------------------------------------------------------------------------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                                                                      |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+--------------------------------------------------------------------------------------------------------------------------+
-| g2        | n/a   | BUFG/O          | None       |        1164 |               0 | 1114 |      1 |    0 |   0 |  0 |    0 |   0 |       0 | meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_ddr3_infrastructure/CLK                                            |
-| g5        | n/a   | BUFG/O          | None       |           4 |               0 |    0 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_ddr3_infrastructure/mmcm_ps_clk                                    |
+| g0        | n/a   | BUFG/O          | None       |          29 |               0 |   29 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | meisha_i/clk_wiz_0/inst/clk_out2                                                                                         |
+| g2        | n/a   | BUFG/O          | None       |        3751 |               0 | 3690 |     12 |    0 |   0 |  0 |    0 |   0 |       0 | meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_ddr3_infrastructure/CLK                                            |
+| g5        | n/a   | BUFG/O          | None       |          18 |               0 |   14 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_ddr3_infrastructure/mmcm_ps_clk                                    |
 | g6        | n/a   | BUFG/O          | None       |           1 |               0 |    0 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_iodelay_ctrl/clk_ref_300_400_en.clk_ref_400.u_bufg_clk_ref_400_n_0 |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+--------------------------------------------------------------------------------------------------------------------------+
 * Clock Loads column represents the clock pin loads (pin count)
@@ -348,7 +378,7 @@ Table of Contents
 *** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
 
 
-19. Load Cell Placement Summary for Global Clock g0
+21. Load Cell Placement Summary for Global Clock g0
 ---------------------------------------------------
 
 +-----------+-----------------+-------------------+-----------------------------+-------------+----------------+----------+-------------+----------+----------------+----------+----------------------------------+
@@ -365,17 +395,17 @@ Table of Contents
 +----+-------+-------+
 |    | X0    | X1    |
 +----+-------+-------+
-| Y6 |     0 |     0 |
-| Y5 |     0 |     0 |
-| Y4 |   930 |  1163 |
-| Y3 |  5778 |  6036 |
-| Y2 |  6152 |  5831 |
-| Y1 |  4975 |  8141 |
-| Y0 |  6073 |  6261 |
+| Y6 |   480 |    29 |
+| Y5 |  4176 |   475 |
+| Y4 |  7537 |  6066 |
+| Y3 |  6526 |  4126 |
+| Y2 |  6270 |  2909 |
+| Y1 |  5218 |  4826 |
+| Y0 |  1467 |  1235 |
 +----+-------+-------+
 
 
-20. Load Cell Placement Summary for Global Clock g1
+22. Load Cell Placement Summary for Global Clock g1
 ---------------------------------------------------
 
 +-----------+-----------------+-------------------+-----------------------------+-------------+----------------+----------+-------------+----------+----------------+----------+----------------------------------+
@@ -393,16 +423,16 @@ Table of Contents
 |    | X0    | X1    |
 +----+-------+-------+
 | Y6 |     0 |     0 |
-| Y5 |     0 |    58 |
-| Y4 |     0 |  3814 |
-| Y3 |     2 |    46 |
-| Y2 |  2370 |  6704 |
-| Y1 |  2327 |  3447 |
+| Y5 |     0 |  1933 |
+| Y4 |   693 |  2024 |
+| Y3 |  3800 |  7512 |
+| Y2 |   392 |  2414 |
+| Y1 |     0 |     0 |
 | Y0 |     3 |     0 |
 +----+-------+-------+
 
 
-21. Load Cell Placement Summary for Global Clock g2
+23. Load Cell Placement Summary for Global Clock g2
 ---------------------------------------------------
 
 +-----------+-----------------+-------------------+-----------+-------------+---------------+----------+-------------+----------+----------------+----------+-------------------------------------------------------------------------------+
@@ -416,20 +446,20 @@ Table of Contents
 **** GT Loads column represents load cell count of GT types
 
 
-+----+----+--------+
-|    | X0 | X1     |
-+----+----+--------+
-| Y6 |  0 |   1164 |
-| Y5 |  0 |  10230 |
-| Y4 |  0 |   2206 |
-| Y3 |  0 |      0 |
-| Y2 |  0 |      0 |
-| Y1 |  0 |      0 |
-| Y0 |  0 |      0 |
-+----+----+--------+
++----+----+-------+
+|    | X0 | X1    |
++----+----+-------+
+| Y6 |  0 |  3751 |
+| Y5 |  0 |  9315 |
+| Y4 |  1 |   533 |
+| Y3 |  0 |     0 |
+| Y2 |  0 |     0 |
+| Y1 |  0 |     0 |
+| Y0 |  0 |     0 |
++----+----+-------+
 
 
-22. Load Cell Placement Summary for Global Clock g3
+24. Load Cell Placement Summary for Global Clock g3
 ---------------------------------------------------
 
 +-----------+-----------------+-------------------+--------------+-------------+-----------------+----------+-------------+----------+----------------+----------+-------------------------+
@@ -448,15 +478,15 @@ Table of Contents
 +----+------+----+
 | Y6 |    0 |  0 |
 | Y5 |    0 |  0 |
-| Y4 |    0 |  0 |
-| Y3 |    0 |  0 |
+| Y4 |  266 |  0 |
+| Y3 |   43 |  0 |
 | Y2 |    0 |  0 |
-| Y1 |  309 |  0 |
+| Y1 |    0 |  0 |
 | Y0 |    0 |  0 |
 +----+------+----+
 
 
-23. Load Cell Placement Summary for Global Clock g4
+25. Load Cell Placement Summary for Global Clock g4
 ---------------------------------------------------
 
 +-----------+-----------------+-------------------+-----------------------------+-------------+---------------+----------+-------------+----------+----------------+----------+----------------------------------+
@@ -470,20 +500,20 @@ Table of Contents
 **** GT Loads column represents load cell count of GT types
 
 
-+----+----+-----+
-|    | X0 | X1  |
-+----+----+-----+
-| Y6 |  0 |   0 |
-| Y5 |  0 |   1 |
-| Y4 |  0 |   0 |
-| Y3 |  0 |  25 |
-| Y2 |  1 |  20 |
-| Y1 |  0 |   0 |
-| Y0 |  0 |   1 |
-+----+----+-----+
++----+-----+----+
+|    | X0  | X1 |
++----+-----+----+
+| Y6 |   0 |  0 |
+| Y5 |   0 |  1 |
+| Y4 |   0 |  2 |
+| Y3 |   0 |  0 |
+| Y2 |  40 |  4 |
+| Y1 |   0 |  0 |
+| Y0 |   0 |  1 |
++----+-----+----+
 
 
-24. Load Cell Placement Summary for Global Clock g5
+26. Load Cell Placement Summary for Global Clock g5
 ---------------------------------------------------
 
 +-----------+-----------------+-------------------+---------------------+-------------+---------------+----------+-------------+----------+----------------+----------+---------------------------------------------------------------------------------------+
@@ -500,8 +530,8 @@ Table of Contents
 +----+----+-----+
 |    | X0 | X1  |
 +----+----+-----+
-| Y6 |  0 |   4 |
-| Y5 |  0 |  14 |
+| Y6 |  0 |  18 |
+| Y5 |  0 |   0 |
 | Y4 |  0 |   4 |
 | Y3 |  0 |   0 |
 | Y2 |  0 |   0 |
@@ -510,7 +540,7 @@ Table of Contents
 +----+----+-----+
 
 
-25. Load Cell Placement Summary for Global Clock g6
+27. Load Cell Placement Summary for Global Clock g6
 ---------------------------------------------------
 
 +-----------+-----------------+-------------------+------------------+-------------+---------------+----------+-------------+----------+----------------+----------+--------------------------------------------------------------------------------------------------------------------------+
@@ -537,7 +567,7 @@ Table of Contents
 +----+----+-----+
 
 
-26. Load Cell Placement Summary for Global Clock g7
+28. Load Cell Placement Summary for Global Clock g7
 ---------------------------------------------------
 
 +-----------+-----------------+-------------------+---------+-------------+---------------+----------+-------------+----------+----------------+----------+----------------------------------------------------+
@@ -564,7 +594,7 @@ Table of Contents
 +----+----+----+
 
 
-27. Load Cell Placement Summary for Global Clock g8
+29. Load Cell Placement Summary for Global Clock g8
 ---------------------------------------------------
 
 +-----------+-----------------+-------------------+-----------------------------+-------------+----------------+----------+-------------+----------+----------------+----------+---------------------------------------------------------+
@@ -591,7 +621,7 @@ Table of Contents
 +----+----+----+
 
 
-28. Load Cell Placement Summary for Global Clock g9
+30. Load Cell Placement Summary for Global Clock g9
 ---------------------------------------------------
 
 +-----------+-----------------+-------------------+-----------------------------+-------------+---------------+----------+-------------+----------+----------------+----------+---------------------------------------------------------+
@@ -618,7 +648,7 @@ Table of Contents
 +----+----+----+
 
 
-29. Load Cell Placement Summary for Global Clock g10
+31. Load Cell Placement Summary for Global Clock g10
 ----------------------------------------------------
 
 +-----------+-----------------+-------------------+--------------+-------------+---------------+----------+-------------+----------+----------------+----------+------------------------------------------------------------------------------------+
@@ -679,40 +709,40 @@ resize_pblock [get_pblocks {CLKAG_meisha_i/mig_7series_0/u_meisha_mig_7series_0_
 #startgroup
 create_pblock {CLKAG_meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_ddr3_infrastructure/mmcm_ps_clk}
 add_cells_to_pblock [get_pblocks  {CLKAG_meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_ddr3_infrastructure/mmcm_ps_clk}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_ddr3_infrastructure/mmcm_ps_clk"}]]]
-resize_pblock [get_pblocks {CLKAG_meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_ddr3_infrastructure/mmcm_ps_clk}] -add {CLOCKREGION_X1Y4:CLOCKREGION_X1Y4 CLOCKREGION_X1Y5:CLOCKREGION_X1Y5 CLOCKREGION_X1Y6:CLOCKREGION_X1Y6}
+resize_pblock [get_pblocks {CLKAG_meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_ddr3_infrastructure/mmcm_ps_clk}] -add {CLOCKREGION_X1Y4:CLOCKREGION_X1Y4 CLOCKREGION_X1Y6:CLOCKREGION_X1Y6}
 #endgroup
 
 # Clock net "meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_ddr3_infrastructure/CLK" driven by instance "meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_ddr3_infrastructure/u_bufg_clkdiv0" located at site "BUFGCTRL_X0Y16"
 #startgroup
 create_pblock {CLKAG_meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_ddr3_infrastructure/CLK}
 add_cells_to_pblock [get_pblocks  {CLKAG_meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_ddr3_infrastructure/CLK}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL && NAME!=meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_ddr3_infrastructure/gen_mmcm.mmcm_i} -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_ddr3_infrastructure/CLK"}]]]
-resize_pblock [get_pblocks {CLKAG_meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_ddr3_infrastructure/CLK}] -add {CLOCKREGION_X1Y4:CLOCKREGION_X1Y4 CLOCKREGION_X1Y5:CLOCKREGION_X1Y5 CLOCKREGION_X1Y6:CLOCKREGION_X1Y6}
+resize_pblock [get_pblocks {CLKAG_meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_ddr3_infrastructure/CLK}] -add {CLOCKREGION_X0Y4:CLOCKREGION_X0Y4 CLOCKREGION_X1Y4:CLOCKREGION_X1Y4 CLOCKREGION_X1Y5:CLOCKREGION_X1Y5 CLOCKREGION_X1Y6:CLOCKREGION_X1Y6}
 #endgroup
 
 # Clock net "meisha_i/clk_wiz_1/inst/clk_out1" driven by instance "meisha_i/clk_wiz_1/inst/clkout1_buf" located at site "BUFGCTRL_X0Y1"
 #startgroup
 create_pblock {CLKAG_meisha_i/clk_wiz_1/inst/clk_out1}
-add_cells_to_pblock [get_pblocks  {CLKAG_meisha_i/clk_wiz_1/inst/clk_out1}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL && NAME!=meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_ddr3_infrastructure/plle2_i && NAME!=meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_iodelay_ctrl/clk_ref_mmcm_gen.mmcm_i} -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="meisha_i/clk_wiz_1/inst/clk_out1"}]]]
-resize_pblock [get_pblocks {CLKAG_meisha_i/clk_wiz_1/inst/clk_out1}] -add {CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
+add_cells_to_pblock [get_pblocks  {CLKAG_meisha_i/clk_wiz_1/inst/clk_out1}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL && NAME!=meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_iodelay_ctrl/clk_ref_mmcm_gen.mmcm_i && NAME!=meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_ddr3_infrastructure/plle2_i} -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="meisha_i/clk_wiz_1/inst/clk_out1"}]]]
+resize_pblock [get_pblocks {CLKAG_meisha_i/clk_wiz_1/inst/clk_out1}] -add {CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y4:CLOCKREGION_X1Y4}
 #endgroup
 
 # Clock net "meisha_i/clk_wiz_0/inst/clk_out2" driven by instance "meisha_i/clk_wiz_0/inst/clkout2_buf" located at site "BUFGCTRL_X0Y3"
 #startgroup
 create_pblock {CLKAG_meisha_i/clk_wiz_0/inst/clk_out2}
 add_cells_to_pblock [get_pblocks  {CLKAG_meisha_i/clk_wiz_0/inst/clk_out2}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="meisha_i/clk_wiz_0/inst/clk_out2"}]]]
-resize_pblock [get_pblocks {CLKAG_meisha_i/clk_wiz_0/inst/clk_out2}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X0Y4:CLOCKREGION_X0Y4 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3 CLOCKREGION_X1Y4:CLOCKREGION_X1Y4}
+resize_pblock [get_pblocks {CLKAG_meisha_i/clk_wiz_0/inst/clk_out2}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X0Y4:CLOCKREGION_X0Y4 CLOCKREGION_X0Y5:CLOCKREGION_X0Y5 CLOCKREGION_X0Y6:CLOCKREGION_X0Y6 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3 CLOCKREGION_X1Y4:CLOCKREGION_X1Y4 CLOCKREGION_X1Y5:CLOCKREGION_X1Y5 CLOCKREGION_X1Y6:CLOCKREGION_X1Y6}
 #endgroup
 
 # Clock net "meisha_i/clk_wiz_0/inst/clk_out1" driven by instance "meisha_i/clk_wiz_0/inst/clkout1_buf" located at site "BUFGCTRL_X0Y0"
 #startgroup
 create_pblock {CLKAG_meisha_i/clk_wiz_0/inst/clk_out1}
 add_cells_to_pblock [get_pblocks  {CLKAG_meisha_i/clk_wiz_0/inst/clk_out1}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="meisha_i/clk_wiz_0/inst/clk_out1"}]]]
-resize_pblock [get_pblocks {CLKAG_meisha_i/clk_wiz_0/inst/clk_out1}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3 CLOCKREGION_X1Y4:CLOCKREGION_X1Y4 CLOCKREGION_X1Y5:CLOCKREGION_X1Y5}
+resize_pblock [get_pblocks {CLKAG_meisha_i/clk_wiz_0/inst/clk_out1}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X0Y4:CLOCKREGION_X0Y4 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3 CLOCKREGION_X1Y4:CLOCKREGION_X1Y4 CLOCKREGION_X1Y5:CLOCKREGION_X1Y5}
 #endgroup
 
 # Clock net "jtag_jtag_TCK_IBUF_BUFG" driven by instance "jtag_jtag_TCK_IBUF_BUFG_inst" located at site "BUFGCTRL_X0Y4"
 #startgroup
 create_pblock {CLKAG_jtag_jtag_TCK_IBUF_BUFG}
 add_cells_to_pblock [get_pblocks  {CLKAG_jtag_jtag_TCK_IBUF_BUFG}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="jtag_jtag_TCK_IBUF_BUFG"}]]]
-resize_pblock [get_pblocks {CLKAG_jtag_jtag_TCK_IBUF_BUFG}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+resize_pblock [get_pblocks {CLKAG_jtag_jtag_TCK_IBUF_BUFG}] -add {CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X0Y4:CLOCKREGION_X0Y4}
 #endgroup

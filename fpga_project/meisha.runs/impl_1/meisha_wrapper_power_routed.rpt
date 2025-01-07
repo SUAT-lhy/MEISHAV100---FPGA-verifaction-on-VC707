@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version     : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-| Date             : Tue Dec 31 11:53:30 2024
-| Host             : Freddy running 64-bit major release  (build 9200)
+| Tool Version     : Vivado v.2016.4 (lin64) Build 1756540 Mon Jan 23 19:11:19 MST 2017
+| Date             : Tue Jan  7 10:41:17 2025
+| Host             : meisha running 64-bit CentOS Linux release 7.9.2009 (Core)
 | Command          : report_power -file meisha_wrapper_power_routed.rpt -pb meisha_wrapper_power_summary_routed.pb -rpx meisha_wrapper_power_routed.rpx
 | Design           : meisha_wrapper
 | Device           : xc7vx485tffg1761-2
@@ -30,8 +30,8 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 3.119 |
-| Dynamic (W)              | 2.849 |
+| Total On-Chip Power (W)  | 3.118 |
+| Dynamic (W)              | 2.848 |
 | Device Static (W)        | 0.270 |
 | Total Off-Chip Power (W) | 0.440 |
 | Effective TJA (C/W)      | 1.1   |
@@ -50,16 +50,16 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.284 |       58 |       --- |             --- |
+| Clocks                   |     0.285 |       58 |       --- |             --- |
 | Slice Logic              |     0.128 |   269699 |       --- |             --- |
-|   LUT as Logic           |     0.118 |   135768 |    303600 |           44.72 |
+|   LUT as Logic           |     0.118 |   135772 |    303600 |           44.72 |
 |   CARRY4                 |     0.005 |     5965 |     75900 |            7.86 |
 |   LUT as Distributed RAM |     0.003 |     7972 |    130800 |            6.09 |
 |   Register               |     0.002 |    83187 |    607200 |           13.70 |
 |   F7/F8 Muxes            |    <0.001 |     6820 |    303600 |            2.25 |
-|   LUT as Shift Register  |    <0.001 |      682 |    130800 |            0.52 |
+|   LUT as Shift Register  |    <0.001 |      681 |    130800 |            0.52 |
 |   Others                 |    <0.001 |     2548 |       --- |             --- |
-| Signals                  |     0.175 |   213101 |       --- |             --- |
+| Signals                  |     0.173 |   211935 |       --- |             --- |
 | Block RAM                |     0.091 |       56 |      1030 |            5.44 |
 | MMCM                     |     0.215 |        2 |        14 |           14.29 |
 | PLL                      |     0.162 |        3 |        14 |           21.43 |
@@ -68,7 +68,7 @@ Table of Contents
 | PHASER                   |     0.661 |       44 |       --- |             --- |
 | XADC                     |     0.004 |        1 |       --- |             --- |
 | Static Power             |     0.270 |          |           |                 |
-| Total                    |     3.119 |          |           |                 |
+| Total                    |     3.118 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -78,7 +78,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     1.070 |       0.914 |      0.156 |
+| Vccint    |       1.000 |     1.069 |       0.913 |      0.156 |
 | Vccaux    |       1.800 |     0.521 |       0.483 |      0.038 |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -157,20 +157,20 @@ Table of Contents
 | iserdes_clkdiv_6                                                                                                                                          | meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/iserdes_clkdiv                                 |             2.5 |
 | iserdes_clkdiv_7                                                                                                                                          | meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/iserdes_clkdiv                                 |             2.5 |
 | jtag_clk_pin                                                                                                                                              | jtag_jtag_TCK                                                                                                                                                                                                                                    |           300.0 |
-| mem_refclk                                                                                                                                                | meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_ddr3_infrastructure/mem_refclk                                                                                                                                                             |             1.3 |
+| mem_refclk                                                                                                                                                | meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_ddr3_infrastructure/mem_refclk                                                                                                                                                             |             1.2 |
 | mmcm_clkfbout                                                                                                                                             | meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_iodelay_ctrl/mmcm_clkfbout                                                                                                                                                                 |             5.0 |
 | mmcm_ps_clk_bufg_in                                                                                                                                       | meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_ddr3_infrastructure/mmcm_ps_clk_bufg_in                                                                                                                                                    |            10.0 |
-| oserdes_clk                                                                                                                                               | meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/oserdes_clk                                    |             1.3 |
-| oserdes_clk_1                                                                                                                                             | meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/oserdes_clk                                    |             1.3 |
-| oserdes_clk_10                                                                                                                                            | meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/oserdes_clk                                    |             1.3 |
-| oserdes_clk_2                                                                                                                                             | meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/oserdes_clk                                    |             1.3 |
-| oserdes_clk_3                                                                                                                                             | meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/oserdes_clk                                    |             1.3 |
-| oserdes_clk_4                                                                                                                                             | meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/oserdes_clk                                    |             1.3 |
-| oserdes_clk_5                                                                                                                                             | meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/oserdes_clk                                    |             1.3 |
-| oserdes_clk_6                                                                                                                                             | meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/oserdes_clk                                    |             1.3 |
-| oserdes_clk_7                                                                                                                                             | meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/oserdes_clk                                    |             1.3 |
-| oserdes_clk_8                                                                                                                                             | meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/oserdes_clk                                    |             1.3 |
-| oserdes_clk_9                                                                                                                                             | meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/oserdes_clk                                    |             1.3 |
+| oserdes_clk                                                                                                                                               | meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/oserdes_clk                                    |             1.2 |
+| oserdes_clk_1                                                                                                                                             | meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/oserdes_clk                                    |             1.2 |
+| oserdes_clk_10                                                                                                                                            | meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/oserdes_clk                                    |             1.2 |
+| oserdes_clk_2                                                                                                                                             | meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/oserdes_clk                                    |             1.2 |
+| oserdes_clk_3                                                                                                                                             | meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/oserdes_clk                                    |             1.2 |
+| oserdes_clk_4                                                                                                                                             | meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/oserdes_clk                                    |             1.2 |
+| oserdes_clk_5                                                                                                                                             | meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/oserdes_clk                                    |             1.2 |
+| oserdes_clk_6                                                                                                                                             | meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/oserdes_clk                                    |             1.2 |
+| oserdes_clk_7                                                                                                                                             | meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/oserdes_clk                                    |             1.2 |
+| oserdes_clk_8                                                                                                                                             | meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/oserdes_clk                                    |             1.2 |
+| oserdes_clk_9                                                                                                                                             | meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/oserdes_clk                                    |             1.2 |
 | oserdes_clkdiv                                                                                                                                            | meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/oserdes_clkdiv                                 |             2.5 |
 | oserdes_clkdiv_1                                                                                                                                          | meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/oserdes_clkdiv                                 |             2.5 |
 | oserdes_clkdiv_10                                                                                                                                         | meisha_i/mig_7series_0/u_meisha_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/oserdes_clkdiv                                 |             2.5 |
@@ -205,11 +205,11 @@ Table of Contents
 +-------------------------------------------------------------------------------------+-----------+
 | Name                                                                                | Power (W) |
 +-------------------------------------------------------------------------------------+-----------+
-| meisha_wrapper                                                                      |     2.849 |
-|   meisha_i                                                                          |     2.849 |
-|     DevKitWrapper_0                                                                 |     0.394 |
-|       inst                                                                          |     0.393 |
-|         topMod                                                                      |     0.393 |
+| meisha_wrapper                                                                      |     2.848 |
+|   meisha_i                                                                          |     2.848 |
+|     DevKitWrapper_0                                                                 |     0.395 |
+|       inst                                                                          |     0.395 |
+|         topMod                                                                      |     0.395 |
 |           all_tile_reset_ResetCatchAndSync_d3                                       |    <0.001 |
 |           asink                                                                     |     0.001 |
 |             AsyncQueueSink                                                          |    <0.001 |
@@ -2824,7 +2824,7 @@ Table of Contents
 |                 _T_35_source_reg_0_1_1_1                                            |    <0.001 |
 |               Queue_4                                                               |    <0.001 |
 |                 _T_35_sink_reg_0_1_0_2                                              |    <0.001 |
-|             core                                                                    |     0.013 |
+|             core                                                                    |     0.014 |
 |               _T_714_reg_r1_0_31_0_5                                                |    <0.001 |
 |               _T_714_reg_r1_0_31_12_17                                              |    <0.001 |
 |               _T_714_reg_r1_0_31_18_23                                              |    <0.001 |
@@ -2857,7 +2857,7 @@ Table of Contents
 |               tlb                                                                   |     0.003 |
 |             dcacheArb                                                               |    <0.001 |
 |             fpuOpt                                                                  |     0.025 |
-|               dfma                                                                  |     0.012 |
+|               dfma                                                                  |     0.011 |
 |                 fma                                                                 |     0.011 |
 |                   roundRawFNToRecFN                                                 |    <0.001 |
 |                     roundAnyRawFNToRecFN                                            |    <0.001 |
@@ -2892,7 +2892,7 @@ Table of Contents
 |                 _T_1161_reg_256_383_0_0                                             |    <0.001 |
 |                 _T_1161_reg_384_511_0_0                                             |    <0.001 |
 |               fq                                                                    |    <0.001 |
-|               icache                                                                |     0.014 |
+|               icache                                                                |     0.013 |
 |                 data_arrays_0                                                       |     0.004 |
 |                   data_arrays_0_0_ext                                               |     0.004 |
 |                 data_arrays_1                                                       |     0.005 |
@@ -3019,21 +3019,21 @@ Table of Contents
 |               _T_714_reg_r2_0_31_60_63                                              |    <0.001 |
 |               _T_714_reg_r2_0_31_6_11                                               |    <0.001 |
 |               csr                                                                   |     0.004 |
-|               div                                                                   |     0.007 |
+|               div                                                                   |     0.008 |
 |               ibuf                                                                  |    <0.001 |
-|             dcache                                                                  |     0.018 |
+|             dcache                                                                  |     0.019 |
 |               data                                                                  |     0.008 |
 |                 data_arrays_0                                                       |     0.008 |
 |                   data_arrays_0_ext                                                 |     0.008 |
 |               tlb                                                                   |     0.004 |
 |             dcacheArb                                                               |    <0.001 |
-|             fpuOpt                                                                  |     0.026 |
-|               dfma                                                                  |     0.012 |
-|                 fma                                                                 |     0.011 |
+|             fpuOpt                                                                  |     0.025 |
+|               dfma                                                                  |     0.011 |
+|                 fma                                                                 |     0.010 |
 |                   roundRawFNToRecFN                                                 |    <0.001 |
 |                     roundAnyRawFNToRecFN                                            |    <0.001 |
-|               divSqrt                                                               |     0.003 |
-|                 divSqrtRecFNToRaw                                                   |     0.003 |
+|               divSqrt                                                               |     0.004 |
+|                 divSqrtRecFNToRaw                                                   |     0.004 |
 |                 roundRawFNToRecFN                                                   |    <0.001 |
 |                   roundAnyRawFNToRecFN                                              |    <0.001 |
 |               divSqrt_1                                                             |     0.002 |
@@ -3066,12 +3066,12 @@ Table of Contents
 |               icache                                                                |     0.013 |
 |                 data_arrays_0                                                       |     0.004 |
 |                   data_arrays_0_0_ext                                               |     0.004 |
-|                 data_arrays_1                                                       |     0.004 |
-|                   data_arrays_0_0_ext                                               |     0.004 |
+|                 data_arrays_1                                                       |     0.005 |
+|                   data_arrays_0_0_ext                                               |     0.005 |
 |                 repl_way_v0_prng                                                    |    <0.001 |
 |                 tag_array                                                           |     0.004 |
 |                   tag_array_0_ext                                                   |     0.004 |
-|               tlb                                                                   |     0.003 |
+|               tlb                                                                   |     0.004 |
 |             intsink                                                                 |    <0.001 |
 |               SynchronizerShiftReg_w1_d3                                            |    <0.001 |
 |             ptw                                                                     |     0.003 |
@@ -3198,7 +3198,7 @@ Table of Contents
 |                   data_arrays_0_ext                                                 |     0.008 |
 |               tlb                                                                   |     0.004 |
 |             dcacheArb                                                               |    <0.001 |
-|             fpuOpt                                                                  |     0.024 |
+|             fpuOpt                                                                  |     0.025 |
 |               dfma                                                                  |     0.011 |
 |                 fma                                                                 |     0.011 |
 |                   roundRawFNToRecFN                                                 |    <0.001 |
@@ -3242,13 +3242,13 @@ Table of Contents
 |                 repl_way_v0_prng                                                    |    <0.001 |
 |                 tag_array                                                           |     0.004 |
 |                   tag_array_0_ext                                                   |     0.004 |
-|               tlb                                                                   |     0.003 |
+|               tlb                                                                   |     0.004 |
 |             intsink                                                                 |    <0.001 |
 |               SynchronizerShiftReg_w1_d3                                            |    <0.001 |
 |             ptw                                                                     |     0.003 |
 |               arb                                                                   |    <0.001 |
 |             tlMasterXbar                                                            |    <0.001 |
-|           tile_3                                                                    |     0.085 |
+|           tile_3                                                                    |     0.086 |
 |             buffer                                                                  |     0.001 |
 |               Queue                                                                 |    <0.001 |
 |                 _T_35_address_reg_0_1_0_5                                           |    <0.001 |
@@ -3337,7 +3337,7 @@ Table of Contents
 |                 _T_35_source_reg_0_1_1_1                                            |    <0.001 |
 |               Queue_4                                                               |    <0.001 |
 |                 _T_35_sink_reg_0_1_0_2                                              |    <0.001 |
-|             core                                                                    |     0.012 |
+|             core                                                                    |     0.013 |
 |               _T_714_reg_r1_0_31_0_5                                                |    <0.001 |
 |               _T_714_reg_r1_0_31_12_17                                              |    <0.001 |
 |               _T_714_reg_r1_0_31_18_23                                              |    <0.001 |
@@ -3360,7 +3360,7 @@ Table of Contents
 |               _T_714_reg_r2_0_31_54_59                                              |    <0.001 |
 |               _T_714_reg_r2_0_31_60_63                                              |    <0.001 |
 |               _T_714_reg_r2_0_31_6_11                                               |    <0.001 |
-|               csr                                                                   |     0.003 |
+|               csr                                                                   |     0.004 |
 |               div                                                                   |     0.007 |
 |               ibuf                                                                  |    <0.001 |
 |             dcache                                                                  |     0.017 |
@@ -3405,7 +3405,7 @@ Table of Contents
 |                 _T_1161_reg_256_383_0_0                                             |    <0.001 |
 |                 _T_1161_reg_384_511_0_0                                             |    <0.001 |
 |               fq                                                                    |    <0.001 |
-|               icache                                                                |     0.014 |
+|               icache                                                                |     0.013 |
 |                 data_arrays_0                                                       |     0.004 |
 |                   data_arrays_0_0_ext                                               |     0.004 |
 |                 data_arrays_1                                                       |     0.005 |
@@ -3514,7 +3514,7 @@ Table of Contents
 |                     gntv_or_sync_fifo.gl0.wr                                        |    <0.001 |
 |                       gwas.wsts                                                     |    <0.001 |
 |                       wpntr                                                         |    <0.001 |
-|                     gntv_or_sync_fifo.mem                                           |     0.001 |
+|                     gntv_or_sync_fifo.mem                                           |    <0.001 |
 |                       gdm.dm_gen.dm                                                 |    <0.001 |
 |                         RAM_reg_0_15_0_5                                            |    <0.001 |
 |                         RAM_reg_0_15_12_17                                          |    <0.001 |
@@ -3979,23 +3979,23 @@ Table of Contents
 |       inst                                                                          |     0.098 |
 |     clk_wiz_1                                                                       |     0.069 |
 |       inst                                                                          |     0.069 |
-|     mig_7series_0                                                                   |     2.261 |
-|       u_meisha_mig_7series_0_0_mig                                                  |     2.261 |
+|     mig_7series_0                                                                   |     2.259 |
+|       u_meisha_mig_7series_0_0_mig                                                  |     2.259 |
 |         temp_mon_enabled.u_tempmon                                                  |     0.012 |
 |         u_ddr3_clk_ibuf                                                             |     0.000 |
 |         u_ddr3_infrastructure                                                       |     0.100 |
 |         u_iodelay_ctrl                                                              |     0.126 |
-|         u_memc_ui_top_axi                                                           |     2.024 |
+|         u_memc_ui_top_axi                                                           |     2.021 |
 |           mem_intfc0                                                                |     1.942 |
 |             ddr_phy_top0                                                            |     1.929 |
-|               u_ddr_calib_top                                                       |     0.100 |
+|               u_ddr_calib_top                                                       |     0.101 |
 |                 ddr_phy_prbs_rdlvl_gen.u_ddr_phy_prbs_rdlvl                         |     0.023 |
 |                 ddr_phy_rdlvl_gen.u_ddr_phy_rdlvl                                   |     0.013 |
 |                 ddr_phy_tempmon_0                                                   |     0.002 |
 |                 dqsfind_calib_right.u_ddr_phy_dqs_found_cal                         |     0.003 |
 |                 mb_wrlvl_inst.u_ddr_phy_ck_addr_cmd_delay                           |    <0.001 |
 |                 mb_wrlvl_inst.u_ddr_phy_wrlvl                                       |     0.012 |
-|                 oclk_calib.u_ddr_phy_oclkdelay_cal                                  |     0.015 |
+|                 oclk_calib.u_ddr_phy_oclkdelay_cal                                  |     0.014 |
 |                   u_ocd_cntlr                                                       |     0.002 |
 |                   u_ocd_data                                                        |    <0.001 |
 |                   u_ocd_edge                                                        |    <0.001 |
@@ -4009,10 +4009,10 @@ Table of Contents
 |                     u_edge_right                                                    |    <0.001 |
 |                     u_poc_meta                                                      |     0.003 |
 |                     u_poc_tap_base                                                  |     0.002 |
-|                 u_ddr_phy_init                                                      |     0.024 |
+|                 u_ddr_phy_init                                                      |     0.025 |
 |                 u_ddr_phy_wrcal                                                     |     0.004 |
 |                 u_ddr_prbs_gen                                                      |     0.002 |
-|               u_ddr_mc_phy_wrapper                                                  |     1.830 |
+|               u_ddr_mc_phy_wrapper                                                  |     1.828 |
 |                 gen_dq_iobuf_HP.gen_dq_iobuf[0].u_iobuf_dq                          |     0.009 |
 |                 gen_dq_iobuf_HP.gen_dq_iobuf[10].u_iobuf_dq                         |     0.009 |
 |                 gen_dq_iobuf_HP.gen_dq_iobuf[11].u_iobuf_dq                         |     0.009 |
@@ -4101,7 +4101,7 @@ Table of Contents
 |                 gen_dqs_iobuf_HP.gen_dqs_iobuf[7].gen_dqs_diff.u_iddr_edge_det      |    <0.001 |
 |                 gen_dqs_iobuf_HP.gen_dqs_iobuf[7].gen_dqs_diff.u_iobuf_dqs          |     0.019 |
 |                   OBUFTDS                                                           |     0.005 |
-|                 u_ddr_mc_phy                                                        |     1.001 |
+|                 u_ddr_mc_phy                                                        |     1.000 |
 |                   ddr_phy_4lanes_0.u_ddr_phy_4lanes                                 |     0.400 |
 |                     ddr_byte_lane_A.ddr_byte_lane_A                                 |     0.084 |
 |                       ddr_byte_group_io                                             |     0.035 |
@@ -4222,10 +4222,10 @@ Table of Contents
 |                         mem_reg_0_15_72_77                                          |    <0.001 |
 |                         mem_reg_0_15_78_79                                          |    <0.001 |
 |                   ddr_phy_4lanes_1.u_ddr_phy_4lanes                                 |     0.198 |
-|                     ddr_byte_lane_B.ddr_byte_lane_B                                 |     0.056 |
+|                     ddr_byte_lane_B.ddr_byte_lane_B                                 |     0.055 |
 |                       ddr_byte_group_io                                             |    <0.001 |
 |                       ddr_ck_gen_loop[0].ddr_ck_gen.ddr_ck_obuf                     |     0.016 |
-|                       of_pre_fifo_gen.u_ddr_of_pre_fifo                             |     0.001 |
+|                       of_pre_fifo_gen.u_ddr_of_pre_fifo                             |    <0.001 |
 |                         mem_reg_0_15_12_17                                          |    <0.001 |
 |                         mem_reg_0_15_18_23                                          |    <0.001 |
 |                         mem_reg_0_15_30_35                                          |    <0.001 |
@@ -4262,9 +4262,9 @@ Table of Contents
 |                         mem_reg_0_15_66_71                                          |    <0.001 |
 |                         mem_reg_0_15_6_11                                           |    <0.001 |
 |                         mem_reg_0_15_72_77                                          |    <0.001 |
-|                   ddr_phy_4lanes_2.u_ddr_phy_4lanes                                 |     0.403 |
+|                   ddr_phy_4lanes_2.u_ddr_phy_4lanes                                 |     0.402 |
 |                     ddr_byte_lane_A.ddr_byte_lane_A                                 |     0.085 |
-|                       ddr_byte_group_io                                             |     0.036 |
+|                       ddr_byte_group_io                                             |     0.035 |
 |                       dq_gen_40.if_post_fifo_gen.u_ddr_if_post_fifo                 |     0.002 |
 |                         mem_reg_0_3_12_17                                           |    <0.001 |
 |                         mem_reg_0_3_18_23                                           |    <0.001 |
@@ -4324,9 +4324,9 @@ Table of Contents
 |                         mem_reg_0_15_6_11                                           |    <0.001 |
 |                         mem_reg_0_15_72_77                                          |    <0.001 |
 |                         mem_reg_0_15_78_79                                          |    <0.001 |
-|                     ddr_byte_lane_C.ddr_byte_lane_C                                 |     0.085 |
+|                     ddr_byte_lane_C.ddr_byte_lane_C                                 |     0.084 |
 |                       ddr_byte_group_io                                             |     0.035 |
-|                       dq_gen_40.if_post_fifo_gen.u_ddr_if_post_fifo                 |     0.002 |
+|                       dq_gen_40.if_post_fifo_gen.u_ddr_if_post_fifo                 |     0.001 |
 |                         mem_reg_0_3_12_17                                           |    <0.001 |
 |                         mem_reg_0_3_18_23                                           |    <0.001 |
 |                         mem_reg_0_3_30_35                                           |    <0.001 |
@@ -4416,7 +4416,7 @@ Table of Contents
 |                 rank_cntrl[0].rank_cntrl0                                           |    <0.001 |
 |                 rank_common0                                                        |    <0.001 |
 |                   maintenance_request.maint_arb0                                    |    <0.001 |
-|           u_axi_mc                                                                  |     0.048 |
+|           u_axi_mc                                                                  |     0.047 |
 |             USE_UPSIZER.upsizer_d2                                                  |     0.028 |
 |               USE_READ.read_addr_inst                                               |     0.001 |
 |                 USE_BURSTS.cmd_queue                                                |    <0.001 |
@@ -4474,7 +4474,7 @@ Table of Contents
 |                 USE_FPGA_WORD_COMPLETED.word_complete_rest_inst                     |    <0.001 |
 |                 USE_FPGA_WORD_COMPLETED.word_complete_rest_pop_inst                 |     0.000 |
 |                 USE_FPGA_WORD_COMPLETED.word_complete_rest_ready_inst               |     0.000 |
-|               USE_WRITE.write_addr_inst                                             |     0.002 |
+|               USE_WRITE.write_addr_inst                                             |     0.001 |
 |                 USE_BURSTS.cmd_queue                                                |     0.001 |
 |                   USE_FPGA_VALID_WRITE.new_write_inst                               |    <0.001 |
 |                   USE_FPGA_VALID_WRITE.s_valid_dummy_inst1                          |    <0.001 |
@@ -4528,11 +4528,11 @@ Table of Contents
 |                 USE_FPGA_WORD_COMPLETED.word_complete_rest_pop_inst                 |     0.000 |
 |                 USE_FPGA_WORD_COMPLETED.word_complete_rest_qual_inst                |    <0.001 |
 |                 USE_FPGA_WORD_COMPLETED.word_complete_rest_valid_inst               |     0.000 |
-|               mi_register_slice_inst                                                |     0.009 |
-|                 r_pipe                                                              |     0.009 |
+|               mi_register_slice_inst                                                |     0.008 |
+|                 r_pipe                                                              |     0.008 |
 |               si_register_slice_inst                                                |     0.002 |
 |                 ar_pipe                                                             |     0.001 |
-|                 aw_pipe                                                             |     0.001 |
+|                 aw_pipe                                                             |    <0.001 |
 |             axi_mc_ar_channel_0                                                     |     0.001 |
 |               ar_cmd_fsm_0                                                          |    <0.001 |
 |               axi_mc_cmd_translator_0                                               |    <0.001 |
@@ -4546,11 +4546,11 @@ Table of Contents
 |             axi_mc_b_channel_0                                                      |    <0.001 |
 |               bid_fifo_0                                                            |    <0.001 |
 |             axi_mc_cmd_arbiter_0                                                    |    <0.001 |
-|             axi_mc_r_channel_0                                                      |     0.007 |
+|             axi_mc_r_channel_0                                                      |     0.006 |
 |               rd_data_fifo_0                                                        |     0.006 |
 |               transaction_fifo_0                                                    |    <0.001 |
 |             axi_mc_w_channel_0                                                      |     0.010 |
-|           u_ui_top                                                                  |     0.034 |
+|           u_ui_top                                                                  |     0.032 |
 |             ui_cmd0                                                                 |    <0.001 |
 |             ui_rd_data0                                                             |     0.015 |
 |               not_strict_mode.rd_buf.rd_buffer_ram[0].RAM32M0                       |    <0.001 |
@@ -4640,7 +4640,7 @@ Table of Contents
 |               not_strict_mode.rd_buf.rd_buffer_ram[8].RAM32M0                       |    <0.001 |
 |               not_strict_mode.rd_buf.rd_buffer_ram[9].RAM32M0                       |    <0.001 |
 |               not_strict_mode.status_ram.RAM32M0                                    |    <0.001 |
-|             ui_wr_data0                                                             |     0.018 |
+|             ui_wr_data0                                                             |     0.017 |
 |               pointer_ram.rams[0].RAM32M0                                           |    <0.001 |
 |               pointer_ram.rams[1].RAM32M0                                           |    <0.001 |
 |               write_buffer.wr_buffer_ram[0].RAM32M0                                 |    <0.001 |

@@ -24,7 +24,7 @@ module BootROM(
   `endif
 `endif
     if (!$value$plusargs("maskromhex=%s", path)) begin
-      path ="/home/test/vivado_prj/meisha_zhenli/sdboot_all.hex" ;
+      path ="/home/test/vivado_prj/MEISHAV100---FPGA-verifaction-on-VC707/fpga_project/sdboot.hex" ;
     end
     $readmemh(path, rom);
   end

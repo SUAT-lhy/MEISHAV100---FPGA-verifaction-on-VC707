@@ -9,13 +9,13 @@ SET_PREFERENCE package ffg1761
 SET_PREFERENCE verilogsim true
 SET_PREFERENCE vhdlsim false
 SET_PREFERENCE designentry Verilog
-SET_PREFERENCE outputdirectory /home/test/vivado_prj/meisha_zhenli/meisha.srcs/sources_1/bd/meisha/ip/meisha_mig_7series_0_0/_tmp/
-SET_PREFERENCE subworkingdirectory /home/test/vivado_prj/meisha_zhenli/meisha.srcs/sources_1/bd/meisha/ip/meisha_mig_7series_0_0/_tmp/
+SET_PREFERENCE outputdirectory /home/test/vivado_prj/MEISHAV100---FPGA-verifaction-on-VC707/fpga_project/meisha.srcs/sources_1/bd/meisha/ip/meisha_mig_7series_0_0/_tmp/
+SET_PREFERENCE subworkingdirectory /home/test/vivado_prj/MEISHAV100---FPGA-verifaction-on-VC707/fpga_project/meisha.srcs/sources_1/bd/meisha/ip/meisha_mig_7series_0_0/_tmp/
 SET_PREFERENCE flowvendor Other
 SET_PREFERENCE tool vivado
 SET_PREFERENCE compnamestatus 0
 SET_PARAMETER component_name meisha_mig_7series_0_0
-SET_PARAMETER xml_input_file /home/test/vivado_prj/meisha_zhenli/meisha.srcs/sources_1/bd/meisha/ip/meisha_mig_7series_0_0/mig_a.prj
+SET_PARAMETER xml_input_file /home/test/vivado_prj/MEISHAV100---FPGA-verifaction-on-VC707/fpga_project/meisha.srcs/sources_1/bd/meisha/ip/meisha_mig_7series_0_0/mig_a.prj
 SET_PARAMETER data_dir_path /eda/vivado2016/Vivado/2016.4/data/ip/xilinx/mig_7series_v4_0
 SET_CORE_NAME Memory Interface Generator (MIG 7 Series)
 SET_CORE_VERSION 2.3

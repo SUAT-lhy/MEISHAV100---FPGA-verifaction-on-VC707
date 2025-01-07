@@ -2,7 +2,7 @@
 <spirit:component xmlns:xilinx="http://www.xilinx.com"
 		xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009"
 		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<spirit:vendor>xilinx.com</spirit:vendor>
+	<spirit:vendor>user.org</spirit:vendor>
 	<spirit:library>module_ref</spirit:library>
 	<spirit:name>DevKitWrapper</spirit:name>
 	<spirit:version>1.0</spirit:version>
@@ -273,7 +273,7 @@
 				<spirit:parameters>
 					<spirit:parameter>
 						<spirit:name>viewChecksum</spirit:name>
-						<spirit:value>1be20f12</spirit:value>
+						<spirit:value>9eb7c264</spirit:value>
 					</spirit:parameter>
 				</spirit:parameters>
 			</spirit:view>
@@ -286,7 +286,7 @@
 				<spirit:parameters>
 					<spirit:parameter>
 						<spirit:name>viewChecksum</spirit:name>
-						<spirit:value>1be20f12</spirit:value>
+						<spirit:value>9eb7c264</spirit:value>
 					</spirit:parameter>
 				</spirit:parameters>
 			</spirit:view>
@@ -960,7 +960,7 @@
 			</spirit:file>
 		</spirit:fileSet>
 	</spirit:fileSets>
-	<spirit:description>xilinx.com:module_ref:DevKitWrapper:1.0</spirit:description>
+	<spirit:description>user.org:module_ref:DevKitWrapper:1.0</spirit:description>
 	<spirit:parameters>
 		<spirit:parameter>
 			<spirit:name>Component_Name</spirit:name>
@@ -984,7 +984,7 @@
 				<xilinx:designToolContext>IPI</xilinx:designToolContext>
 			</xilinx:designToolContexts>
 			<xilinx:coreRevision>1</xilinx:coreRevision>
-			<xilinx:coreCreationDateTime>2024-12-31T07:00:26Z</xilinx:coreCreationDateTime>
+			<xilinx:coreCreationDateTime>2025-01-07T02:11:13Z</xilinx:coreCreationDateTime>
 		</xilinx:coreExtensions>
 		<xilinx:packagingInfo>
 			<xilinx:xilinxVersion>2016.4</xilinx:xilinxVersion>
