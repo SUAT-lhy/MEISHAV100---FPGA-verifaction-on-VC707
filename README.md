@@ -221,7 +221,7 @@ Figure 4 shows the schematic diagram of the verification.
 
 ## 4.2 Clock and Reset    
 
-After the clock of the VC707 on-board differential clock source is converted into a single-ended clock through an IBUFDS primitive, xilinx's PLL IP core module will generate 3 CLKS, which are respectively provided to rockecttile, chiplink module and other sub. The chip is expected to support RocketTile using 1GHz clock, CHIPLINK module using 250M clock, and other modules using 500M clock, but currently in the FPGA prototype verification project, except chiplink module using 150MHz clock, other unified use 50MHz clock. Otherwise, too high a frequency will lead to timing violations.    
+After the clock of the VC707 on-board differential clock source is converted into a single-ended clock through an IBUFDS primitive, xilinx's PLL IP core module will generate 3 CLKS, which are respectively provided to rockecttile, chiplink module and other sub. The chip is expected to support RocketTile using 1GHz clock, CHIPLINK module using 250M clock, and other modules using 500M clock, but currently in the FPGA prototype verification project, except chiplink module using 150MHz clock, other unified use 50MHz clock. Otherwise, too high a frequency will lead to timing violations. This is typically because the FPGA's fabrication process and routing delays cannot meet the high-frequency requirements of an SoC ASIC design. This is a common trade-off in FPGA prototyping.    
 
 The top layer ResetGEN module generates multiple resets, which are respectively provided to rockecttile, chiplink module and other subs. It is expected to support the reset signal generated after RocketTile uses 1G clock to beat, and the reset signal generated after CHIPLINK module uses 250M clock to beat. The reset signal generated after other modules use the 500M clock is supported. See **_Figure 5_** for the reset timing diagram.   
 
@@ -288,7 +288,7 @@ Tested on VC707, when Chiplink uses 150MHz and 200MHz clocks, Vivado software wi
 
 **Note:     
 The address range of the Chiplink we use is from `0x8000_0000` to `0xDfff_ffff`.   
-Reading and writing Chiplinks in other address ranges will report a slave error.**     
+This address range represents the memory-mapped addresses that the SoC uses to access the external device (the DDR3 on the FPGA) via the ChipLink protocol. Reading and writing Chiplinks in other address ranges will report a slave error.**     
 
 
 ## 4.6 MEISHAV100 on Vivado
@@ -336,7 +336,7 @@ The configurations of relavant IP cores are described as following:
    - These modules are processor cores responsible for executing instructions and processing data. Each RocketTile represents an independent processor core, which communicates via the S-BUS.
 
 2. **S-BUS**:
-   - The S-BUS is a system bus that connects the various processor cores to other modules, providing a channel for data and instruction transfer.
+   - The S-BUS is a system bus that connects the various processor cores to other modules, providing a channel for data and instruction transfer. It links to downstream buses (such as the CONTROL_BUS and PERIPHERAL_BUS). TileLink is the specific protocol implemented by this bus in this project.
 
 3. **QSPI**:
    - QSPI (Quad Serial Peripheral Interface) is a high-speed serial interface used for fast data transmission. It typically connects external memory or other high-speed peripherals.
@@ -728,6 +728,8 @@ The following tools are needed:
 - QT Creator
 - MingW64 compiler (installed with Visual Studio 2022 and QT Creator)
 
+FT2232 is a popular USB to multi-purpose serial interface chip. Its primary function is to act as a bridge, enabling a computer to communicate with low-level hardware debug interfaces (such as JTAG, SPI, and UART) via a USB connection.
+
 ## 7.3 Configuring FT2232 Program
 
 ```c
@@ -932,7 +934,7 @@ Troubleshooting: If data transmission issues occur, consider using pull-up resis
 ## 8.1 Start-up Process
 
 Power on → Run the bootloader in the maskROM → Load the Linux image file `bbl.bin` in the SD card to the DDR → Start the Linux system
-The bootloader program stored in maskROM mainly completes loading and starting Linux image files from SD card to DDR storage. The construction of Linux image files is detailed in Section 5.2.
+The bootloader program stored in maskROM mainly completes loading and starting Linux image files from SD card to DDR storage. The construction of Linux image files is detailed in Section 8.2.
 
 ## 8.2 Generating an SD-Bootable Image
 The Linux image file is built on ubuntu16.04. Follow the commands below to install and compile the required software package:    
