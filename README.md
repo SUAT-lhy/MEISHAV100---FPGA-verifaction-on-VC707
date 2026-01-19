@@ -1199,11 +1199,11 @@ This section describes the workflow for developing standard C/C++ applications t
 ## 9.1 Toolchain Requirement
 For Linux applications, you must use the Linux-target toolchain. The bare-metal toolchain (riscv64-unknown-elf-gcc) will not work because it lacks the standard C library support for Linux system calls.
 
-**Bare-metal toolchain**: riscv64-unknown-elf-gcc (Do **NOT** use for this section)
-**Linux toolchain**: riscv64-unknown-linux-gnu-gcc (or riscv64-linux-gnu-gcc)
+- **Bare-metal toolchain**: `riscv64-unknown-elf-gcc` (Do **NOT** use for this section)
+- **Linux toolchain**: `riscv64-unknown-linux-gnu-gcc` (or `riscv64-linux-gnu-gcc`)
 
 **Installation**
-If you have built the full freedom-u-sdk, the toolchain is generated within the buildroot output directory (<sdk_path>/work/buildroot_initramfs/host/bin/).
+If you have built the full `freedom-u-sdk`, the toolchain is generated within the buildroot output directory (`<sdk_path>/work/buildroot_initramfs/host/bin/`).
 
 Alternatively, on an Ubuntu Host, you can install the standard package to save time:
 
@@ -1212,7 +1212,7 @@ sudo apt-get update
 sudo apt-get install gcc-riscv64-linux-gnu g++-riscv64-linux-gnu
 ```
 ## 9.2 Writing the Application
-Create a file named linux_app.c. Since we are running under Linux, we can use standard I/O functions like printf and file operations without writing low-level UART drivers.
+Create a file named `linux_app.c`. Since we are running under Linux, we can use standard I/O functions like `printf` and file operations without writing low-level UART drivers.
 
 ```c
 /* linux_app.c */
@@ -1241,7 +1241,7 @@ int main(int argc, char *argv[]) {
 ## 9.3 Compilation
 Use the cross-compiler to build the binary.
 
-**Important**: We recommend using the -static flag for initial testing. This statically links all necessary libraries into the binary, ensuring it will run even if the target root filesystem is missing specific shared object (.so) versions.
+**Important**: We recommend using the `-static` flag for initial testing. This statically links all necessary libraries into the binary, ensuring it will run even if the target root filesystem is missing specific shared object (`.so`) versions.
 
 ```bash
 # Compile statically for RISC-V 64-bit Linux
