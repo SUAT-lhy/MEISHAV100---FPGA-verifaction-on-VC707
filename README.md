@@ -1193,5 +1193,99 @@ Password:
 
 </font>
 
+# 9. Linux User-Space Application Development
+This section describes the workflow for developing standard C/C++ applications that run on top of the Linux operating system provided by the SDK. Unlike bare-metal development, these applications can utilize standard libraries (glibc/musl), file systems, multitasking, and networking.
 
+## 9.1 Toolchain Requirement
+For Linux applications, you must use the Linux-target toolchain. The bare-metal toolchain (riscv64-unknown-elf-gcc) will not work because it lacks the standard C library support for Linux system calls.
+
+**Bare-metal toolchain**: riscv64-unknown-elf-gcc (Do **NOT** use for this section)
+**Linux toolchain**: riscv64-unknown-linux-gnu-gcc (or riscv64-linux-gnu-gcc)
+
+**Installation**
+If you have built the full freedom-u-sdk, the toolchain is generated within the buildroot output directory (<sdk_path>/work/buildroot_initramfs/host/bin/).
+
+Alternatively, on an Ubuntu Host, you can install the standard package to save time:
+
+```bash
+sudo apt-get update
+sudo apt-get install gcc-riscv64-linux-gnu g++-riscv64-linux-gnu
+```
+## 9.2 Writing the Application
+Create a file named linux_app.c. Since we are running under Linux, we can use standard I/O functions like printf and file operations without writing low-level UART drivers.
+
+```c
+/* linux_app.c */
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+
+int main(int argc, char *argv[]) {
+    printf("========================================\n");
+    printf("Hello from MEISHA V100 Linux User Space!\n");
+    printf("========================================\n");
+
+    // Example: Basic File I/O test
+    FILE *fp = fopen("/tmp/test_log.txt", "w");
+    if (fp) {
+        fprintf(fp, "Writing to file system works successfully.\n");
+        fclose(fp);
+        printf("[INFO] File /tmp/test_log.txt created.\n");
+    } else {
+        perror("[ERROR] File open failed");
+    }
+
+    return 0;
+}
+```
+## 9.3 Compilation
+Use the cross-compiler to build the binary.
+
+**Important**: We recommend using the -static flag for initial testing. This statically links all necessary libraries into the binary, ensuring it will run even if the target root filesystem is missing specific shared object (.so) versions.
+
+```bash
+# Compile statically for RISC-V 64-bit Linux
+riscv64-linux-gnu-gcc linux_app.c -o linux_hello -static -march=rv64gc -mabi=lp64d
+```
+`riscv64-linux-gnu-gcc`: The cross-compiler command.
+`-o linux_hello`: The output binary name.
+`-static`: Prevents "dynamic linker not found" errors on the target.
+`-march=rv64gc`: Specifies the architecture (General purpose 64-bit RISC-V + Compressed instructions).
+
+## 9.4 Transferring to the Target
+There are two common ways to get your compiled program onto the MEISHA V100 board.
+
+**Method A: Copy via SD Card (Offline)**
+1.**Power off** the board and remove the SD card.
+2.Insert the SD card into your PC.
+3.Mount the **root filesystem partition** (usually the second partition, formatted as ext4).
+```bash
+# Example: sudo mount /dev/sdb2 /mnt/sd_rootfs
+sudo cp linux_hello /mnt/sd_rootfs/root/
+sudo umount /mnt/sd_rootfs
+```
+Insert the SD card back into the board and boot.
+**Method B: Copy via SCP/SSH (Online)**
+If your board is connected to the network via Ethernet:
+
+```bash
+# From your Host PC
+scp linux_hello root@<BOARD_IP_ADDRESS>:/root/
+```
+## 9.5 Execution
+1. Power on the MEISHA V100.
+2. Wait for the Linux login prompt and log in (default user: root, password: sifive or empty).
+3. Navigate to the directory and run the executable:
+```bash
+cd /root
+./linux_hello
+```
+**Expected Output:**
+```tcl
+text
+========================================
+Hello from MEISHA V100 Linux User Space!
+========================================
+[INFO] File /tmp/test_log.txt created.
+```
 
