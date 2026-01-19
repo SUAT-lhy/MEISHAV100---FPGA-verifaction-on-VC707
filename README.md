@@ -1247,10 +1247,10 @@ Use the cross-compiler to build the binary.
 # Compile statically for RISC-V 64-bit Linux
 riscv64-linux-gnu-gcc linux_app.c -o linux_hello -static -march=rv64gc -mabi=lp64d
 ```
-`riscv64-linux-gnu-gcc`: The cross-compiler command.
-`-o linux_hello`: The output binary name.
-`-static`: Prevents "dynamic linker not found" errors on the target.
-`-march=rv64gc`: Specifies the architecture (General purpose 64-bit RISC-V + Compressed instructions).
+- `riscv64-linux-gnu-gcc`: The cross-compiler command.
+- `-o linux_hello`: The output binary name.
+- `-static`: Prevents "dynamic linker not found" errors on the target.
+- `-march=rv64gc`: Specifies the architecture (General purpose 64-bit RISC-V + Compressed instructions).
 
 ## 9.4 Transferring to the Target
 There are two common ways to get your compiled program onto the MEISHA V100 board.
@@ -1274,7 +1274,7 @@ scp linux_hello root@<BOARD_IP_ADDRESS>:/root/
 ```
 ## 9.5 Execution
 1. Power on the MEISHA V100.
-2. Wait for the Linux login prompt and log in (default user: root, password: sifive or empty).
+2. Wait for the Linux login prompt and log in (default user: `root`, password: `sifive` or empty).
 3. Navigate to the directory and run the executable:
 ```bash
 cd /root
