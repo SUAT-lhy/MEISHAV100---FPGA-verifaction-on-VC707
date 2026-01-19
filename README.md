@@ -1256,16 +1256,19 @@ riscv64-linux-gnu-gcc linux_app.c -o linux_hello -static -march=rv64gc -mabi=lp6
 There are two common ways to get your compiled program onto the MEISHA V100 board.
 
 **Method A: Copy via SD Card (Offline)**
-1.**Power off** the board and remove the SD card.
-2.Insert the SD card into your PC.
-3.Mount the **root filesystem partition** (usually the second partition, formatted as ext4).
+
+- 1.**Power off** the board and remove the SD card.
+- 2.Insert the SD card into your PC.
+- 3.Mount the **root filesystem partition** (usually the second partition, formatted as ext4).
 ```bash
 # Example: sudo mount /dev/sdb2 /mnt/sd_rootfs
 sudo cp linux_hello /mnt/sd_rootfs/root/
 sudo umount /mnt/sd_rootfs
 ```
-Insert the SD card back into the board and boot.
+- 4. Insert the SD card back into the board and boot.
+
 **Method B: Copy via SCP/SSH (Online)**
+
 If your board is connected to the network via Ethernet:
 
 ```bash
