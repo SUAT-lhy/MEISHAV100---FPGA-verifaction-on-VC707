@@ -989,7 +989,7 @@ After fully clone the repository, compile and execute the Linux image:
 Then the image file `bbl.bin` is generated in the work directory. 
 Burn the bbl.bin to the SD card.  
 
-`$ sudo dd  if=bbl.bin of=/dev/sdb bs=512K count=1`  
+`$ sudo dd if=bbl.bin of=/dev/sdx bs=512K iflag=fullblock oflag=direct conv=fsync status=progress`  
 
 If extra peripherals are needed, modify the `MEISHAV100.dts` file, add the device tree for the corresponding device, and generate a new dtb file.
 
